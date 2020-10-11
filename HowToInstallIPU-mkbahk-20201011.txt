@@ -1,0 +1,73 @@
+ssh mkbahk@106.246.237.171
+
+export TF_POPLAR_FLAGS=--executable_cache_path=/home/$USER/tmp/
+export TMPDIR=/home/$USER/tmp/
+source /home/$USER/poplar_sdk-ubuntu_18_04-1.2.0+131-495c1aa368/gc_drivers-ubuntu_18_04-1.0.44+1604-325648412e/enable.sh
+source /home/$USER/poplar_sdk-ubuntu_18_04-1.2.0+131-495c1aa368/popart-ubuntu_18_04-1.2.100-63af2bbaea/enable.sh
+source /home/$USER/poplar_sdk-ubuntu_18_04-1.2.0+131-495c1aa368/poplar-ubuntu_18_04-1.2.100+9677-c27b85b309/enable.sh
+
+gc-monitor
+
+
+
+python3 -m venv ./venv_mkbahk
+source ./venv_mkbahk/bin/activate
+//venv에서 아래 명령을 다시 실행해야 tensorflow 설치 후 에러 발생안함
+
+
+
+pip3 install jupyter
+
+// 500 Internal Server Error 대응법
+pip3 install --upgrade "ipython[all]"
+pip3 install nbconvert==5.4.1
+
+//wheel파일을 venv 로컬에 copy해야 에러가 없이 수행됩니다.
+cp /mnt/data/poplar_sdk-ubuntu_18_04-1.1.11-54c6f200b3/gc_tensorflow-* .
+pip3 install gc_tensorflow-* .whl
+pip3 install gc-profile-0.8.5-py3-none-any.whl
+
+
+jupyter notebook --ip=0.0.0.0 --port=8888 --allow-root
+
+
+print("Tensorflow version " + tf.__version__)
+
+git clone https://github.com/graphcore/examples.git graphcore_github_examples
+
+watch -n 1 gc-monitor --no-card-info
+
+
+
+gc-profile -d ./profile/ -- python3 pipelining.py
+
+
+
+docker load -i poplar-docker-images-1.0.136.tar.gz
+docker images
+
+gc-docker -- --rm -ti graphcore/tools /bin/bash
+gc-docker --device-id 4 -- --rm -ti graphcore/tools gc-inventory
+
+gc-docker --echo --device-id 4 -- --rm -ti graphcore/tools gc-inventory
+docker run --device=/dev/ipu4:/dev/ipu4 --device=/dev/ipu4_ex:/dev/ipu4_ex -ti graphcore/
+˓→tools gc-inventory
+
+gc-docker -- -ti -v /home/me/cat_pics:/cats graphcore/tensorflow ls -a /cats . .. mog.jpg
+gc-docker -- -ti -e POPLAR_LOG_LEVEL=TRACE graphcore/tensorflow:2 python3
+
+
+//docker 설치 및 일반사용자가 접근가능하도록 퍼미션 허가
+sudo apt install docker.io -y
+sudo chmod 666 /var/run/docker.sock 
+
+
+
+
+docker 내부에 들어가면 처음 반드시 "apt update -y"해야 git 설치가 가능합니다.
+apt udpate -y
+apt install curl wget git -y
+git clone https://github.com/graphcore/examples.git graphcore_github_examples
+
+
+
