@@ -107,7 +107,3 @@ gc-docker -- -ti -e POPLAR_LOG_LEVEL=TRACE graphcore/tensorflow:2 python3
 //관리자가 docker 설치 및 일반사용자가 접근가능하도록 퍼미션 허가
 sudo apt install docker.io -y
 sudo chmod 666 /var/run/docker.sock 
-
-
-
-
