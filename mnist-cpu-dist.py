@@ -5,14 +5,13 @@ import time
 
 print(tf.config.list_physical_devices("CPU"), "\n\n")
 
-start = time.time() # 시작 시간 저장
-
 if tf.__version__[0] != '2':
     raise ImportError("TensorFlow 2 is required for this example")
 
-
 # The input data and labels.
 mnist = tf.keras.datasets.mnist
+
+start = time.time() # 시작 시간 저장
 
 (x_train, y_train), (x_test, y_test) = mnist.load_data()
 (x_train, x_test) = (x_train / 255.0, x_test / 255.0)
