@@ -82,4 +82,4 @@ def main():
 if __name__ == '__main__':
     main()
 
-print("실행시간 :", round(time.time() - start, 2),"(초)")  # 현재시각 - 시작시간 = 실행 시간
+print("Running Time :", round(time.time() - start, 2),"(Sec.)")  # 현재시각 - 시작시간 = 실행 시간
