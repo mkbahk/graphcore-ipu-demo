@@ -50,27 +50,28 @@ def create_model():
 strategy = tf.distribute.get_strategy()
 
 def main():
-    with strategy.scope():
-       # Get the training dataset.
-       print("==============================Getting Training DataSet==============================\n\n")
-       ds1 = create_train_dataset()
-       print("==============================Getting Test DataSet==============================\n\n")
-       ds2 = create_test_dataset()
+   # Get the training dataset.
+   print("==============================Getting Training DataSet==============================\n\n")
+   ds1 = create_train_dataset()
+   print("==============================Getting Test DataSet==============================\n\n")
+   ds2 = create_test_dataset()
 
-       # Create an instance of the model.
-       print("==============================Building Model==============================\n\n")
-       model = create_model()
+   # Create an instance of the model.
+   print("==============================Building Model==============================\n\n")
+   model = create_model()
 
-       # Train the model.
-       print("==============================Start Model Training==============================\n\n")
-       model.compile(loss = tf.keras.losses.SparseCategoricalCrossentropy(), optimizer = tf.keras.optimizers.Adam(),  metrics=['sparse_categorical_accuracy'])
-       model.fit(ds1, steps_per_epoch=2000, epochs=50)
+   # Train the model.
+   print("==============================Start Model Training==============================\n\n")
 
-       print("\n\n==============================Checking the result==============================\n\n")
-       (loss, accuracy) = model.evaluate(ds2, steps=1000)
-       print("Validation loss: {}".format(loss))
-       print("Validation accuracy: {}%".format(100.0 * accuracy))
-       print("\n\n==============================Job Done by Intel CPU with 2 Sockets, 40 Cores !!!==============================")
+   with strategy.scope():
+      model.compile(loss = tf.keras.losses.SparseCategoricalCrossentropy(), optimizer = tf.keras.optimizers.Adam(),  metrics=['sparse_categorical_accuracy'])
+      model.fit(ds1, steps_per_epoch=2000, epochs=50)
+
+      print("\n\n==============================Checking the result==============================\n\n")
+      (loss, accuracy) = model.evaluate(ds2, steps=1000)
+      print("Validation loss: {}".format(loss))
+      print("Validation accuracy: {}%".format(100.0 * accuracy))
+      print("\n\n==============================Job Done by Intel CPU with 2 Sockets, 40 Cores !!!==============================")
    #end of with:
 #end of main
 
