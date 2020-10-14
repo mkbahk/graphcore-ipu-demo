@@ -8,7 +8,7 @@ print(tf.config.list_physical_devices("IPU"), "\n\n")
 
 # Configure the IPU system
 cfg = ipu.utils.create_ipu_config()
-cfg = ipu.utils.auto_select_ipus(cfg, 16)
+cfg = ipu.utils.auto_select_ipus(cfg, 2)
 ipu.utils.configure_ipu_system(cfg)
 
 if tf.__version__[0] != '2':
