@@ -2,18 +2,17 @@
 ssh user_id@106.246.237.171
 
 // Graphcore IPU Driver, Poplar Lib, PopArt Framework 설치
-// .profile내에 아래의 문장을 삽입하거나 개별적으로 수행
-//필요한 파일들은 /mnt/data 디렉토리에 있습니다.
 
-// /mnt/data에 있는 사용할 sdk버젼을 자신의 로컬 홈에 복제하세요
+//필요한 파일들은 /mnt/data 디렉토리에 있습니다.
+// /mnt/data에 있는 사용할 sdk버젼을 자신의 로컬 홈에 복사하세요
 tar xvf poplar_sdk-ubuntu_18_04-버젼.tar.gz
 cd poplar_sdk-ubuntu_18_04-버젼
 
-
+// .profile내에 아래의 문장을 삽입하거나 개별적으로 수행
 // SDK 1.2 버젼 예
 export TF_POPLAR_FLAGS=--executable_cache_path=/home/$USER/tmp/
 export TMPDIR=/home/$USER/tmp/
-source /home/$USER/poplar_sdk-ubuntu_18_04-1.2.0+131-495c1aa368/gc_drivers-ubuntu_18_04-1.0.44+1604-325648412e/enable.sh
+#source /home/$USER/poplar_sdk-ubuntu_18_04-1.2.0+131-495c1aa368/gc_drivers-ubuntu_18_04-1.0.44+1604-325648412e/enable.sh
 source /home/$USER/poplar_sdk-ubuntu_18_04-1.2.0+131-495c1aa368/popart-ubuntu_18_04-1.2.100-63af2bbaea/enable.sh
 source /home/$USER/poplar_sdk-ubuntu_18_04-1.2.0+131-495c1aa368/poplar-ubuntu_18_04-1.2.100+9677-c27b85b309/enable.sh
 
