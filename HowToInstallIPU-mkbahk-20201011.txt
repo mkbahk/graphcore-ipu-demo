@@ -84,7 +84,8 @@ docker images
 //없으면,
 docker load -i poplar-docker-images-1.0.136.tar.gz
 
-//일반 docker run으로 기동하면 gc-monitor시 ipu가 보이지 않습니다.
+//일반 docker run으로 기동하면 gc-monitor시 ipu가 보이지 않습니다. Ctrl+Pq로 exit()하지 않고 잠시 linux shell로
+gc-docker -- -ti graphcore/tools /bin/bash
 gc-docker -- --rm -ti graphcore/tools /bin/bash
 
 //주의사항....주의사항....주의사항....주의사항....주의사항....
