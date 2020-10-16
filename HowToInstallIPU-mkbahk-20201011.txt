@@ -58,9 +58,14 @@ python3
 import tensorflow as tf
 print(tf.__version__)
 
-git clone https://github.com/graphcore/examples.git graphcore_github_examples
+//git에서 Graphcore IPU 정상동작 확인할 수 있는 Sample 모델을 다운받으세요.
 git clone https://github.com/mkbahk/graphcore-ipu-demo
+git clone https://github.com/graphcore/examples.git graphcore_github_examples
 
+//코드실행 예)
+python3 mnist-ipu-dest.py
+
+//모델 실행 시 IPU사용을 확인하기 위해
 watch -n 1 gc-monitor --no-card-info
 
 
