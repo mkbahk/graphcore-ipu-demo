@@ -42,19 +42,7 @@ watch -n 1 gc-monitor
 //python 가상환경을 만들어서 사용하세요.
 python3 -m venv ./venv_poplar1.3
 source ./venv_poplar1.3/bin/activate
-//venv에서 아래 명령을 다시 실행해야 tensorflow 설치 후 에러 발생안함
 
-//tensorflow 버젼 설치
-pip3 install gc_tensorflow-* .whl
-
-//tensorflow 정상동작 확인 
-python3
-import tensorflow as tf
-print(tf.__version__)
-
-
-//gc-profile 사용할 경우 옵션으로 설치가능
-pip3 install gc-profile-0.8.5-py3-none-any.whl
 
 //------------------------------------------
 //jupyter Notebook 을 사용하실 분들은 
@@ -68,10 +56,23 @@ pip3 install nbconvert==5.4.1
 jupyter notebook --ip=0.0.0.0 --port=xxxx --allow-root & 
 //-------------------------------------------
 
+//tensorflow 버젼 설치 1.5 버젼은 에러발생, 2.1버젼을 설치해 주세요.
+pip3 install gc_tensorflow-2.1.0+1.3.30___intel_skylake512____-linux_x86_64.whl
+
+//tensorflow 정상동작 확인 
+python3
+import tensorflow as tf
+print(tf.__version__)
+
 git clone https://github.com/graphcore/examples.git graphcore_github_examples
 git clone https://github.com/mkbahk/graphcore-ipu-demo
 
 watch -n 1 gc-monitor --no-card-info
+
+
+
+//gc-profile 사용할 경우 옵션으로 설치가능
+pip3 install gc-profile-0.8.5-py3-none-any.whl
 gc-profile -d ./profile/ -- python3 xxx.py
 
 
