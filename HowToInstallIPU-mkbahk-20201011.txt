@@ -1,7 +1,9 @@
 //8440  서버에 접속
 ssh user_id@106.246.237.171
 
+//------------------------------------------
 // Graphcore IPU Driver, Poplar Lib, PopArt Framework 설치
+//------------------------------------------
 
 //필요한 파일들은 /mnt/data 디렉토리에 있습니다.
 // /mnt/data에 있는 사용할 sdk버젼을 자신의 로컬 홈에 복사하세요
@@ -39,24 +41,16 @@ gc-monitor
 //실-시간으로 어느 사용자가 IPU 자원을 사용하고 있는 것을 지속적으로 확인하고 싶으시면 
 watch -n 1 gc-monitor
 
+//------------------------------------------
 //python 가상환경을 만들어서 사용하세요.
+//------------------------------------------
 python3 -m venv ./venv_poplar1.3
 source ./venv_poplar1.3/bin/activate
 
-
 //------------------------------------------
-//jupyter Notebook 을 사용하실 분들은 
-pip3 install jupyter
-
-// jupyter Notebook실행 후 새로 python3 문서만들겠다고 했을 때 "500 Internal Server Error" 대응법
-pip3 install --upgrade "ipython[all]"
-pip3 install nbconvert==5.4.1
-
-//xxxx는 포트번호입니다.1024 이상 번호를 사용하세요.
-jupyter notebook --ip=0.0.0.0 --port=xxxx --allow-root & 
-//-------------------------------------------
-
-//tensorflow 버젼 설치 1.5 버젼은 에러발생, 2.1버젼을 설치해 주세요.
+//tensorflow 2.1버젼을 설치해 주세요.
+//------------------------------------------
+pip3 install wheel
 pip3 install gc_tensorflow-2.1.0+1.3.30___intel_skylake512____-linux_x86_64.whl
 
 //tensorflow 정상동작 확인 
@@ -70,14 +64,29 @@ git clone https://github.com/mkbahk/graphcore-ipu-demo
 watch -n 1 gc-monitor --no-card-info
 
 
+//------------------------------------------
+//jupyter Notebook 을 사용하실 분들은 
+//------------------------------------------
+pip3 install jupyter
 
+// jupyter Notebook실행 후 새로 python3 문서만들겠다고 했을 때 "500 Internal Server Error" 대응법
+pip3 install --upgrade "ipython[all]"
+pip3 install nbconvert==5.4.1
+
+//xxxx는 포트번호입니다.1024 이상 번호를 사용하세요.
+jupyter notebook --ip=0.0.0.0 --port=xxxx --allow-root & 
+
+
+//------------------------------------------
 //gc-profile 사용할 경우 옵션으로 설치가능
+//------------------------------------------
 pip3 install gc-profile-0.8.5-py3-none-any.whl
 gc-profile -d ./profile/ -- python3 xxx.py
 
 
 //-------------------------------------------------------
 //가상환경과 SDK소프트웨어도 설치하기 싫으면 바로 Docker 사용가능, 이미 관리자가 Docker Image를 설치해 두었습니다. docker를 수행하기 전에 이미 운영체체 수준에서 ipu-driver만은 설치되어있어야 합니다.
+//------------------------------------------
 
 docker images
 
@@ -102,8 +111,10 @@ docker run --device=/dev/ipu4:/dev/ipu4 --device=/dev/ipu4_ex:/dev/ipu4_ex -ti g
 
 gc-docker -- -ti -v /home/me/cat_pics:/cats graphcore/tensorflow ls -a /catsanddog.jpg
 gc-docker -- -ti -e POPLAR_LOG_LEVEL=TRACE graphcore/tensorflow:2 python3
-//--------------------------------------------------------
 
+
+//------------------------------------------
 //관리자가 docker 설치 및 일반사용자가 접근가능하도록 퍼미션 허가
+//------------------------------------------
 sudo apt install docker.io -y
 sudo chmod 666 /var/run/docker.sock 
