@@ -122,4 +122,18 @@ gc-docker -- -ti -e POPLAR_LOG_LEVEL=TRACE graphcore/tensorflow:2 python3
 //관리자가 docker 설치 및 일반사용자가 접근가능하도록 퍼미션 허가
 //------------------------------------------
 sudo apt install docker.io -y
+
+$ sudo groupadd docker
+Add your user to the docker group.
+
+$ sudo usermod -aG docker $USER
+Log out and log back in so that your group membership is re-evaluated.
+
+$ newgrp docker
+Verify that you can run docker commands without sudo.
+
+$ docker run hello-world
+
+또는
+
 sudo chmod 666 /var/run/docker.sock 
