@@ -1,9 +1,10 @@
 # 0. 모듈 인포트
+
 from tensorflow import keras
-from keras.utils import np_utils
-from keras.datasets import mnist
-from keras.models import Sequential
-from keras.layers import Dense, Activation
+from tensorflow.keras import utils
+from tensorflow.keras.datasets import mnist
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Dense, Activation
 
 # 1. 데이타셋 준비하기
 (X_train, Y_train), (X_test, Y_test) = mnist.load_data()
