@@ -17,17 +17,20 @@ print(y_train.shape, y_test.shape)
 print(x_train.shape, x_test.shape)
 
 #모델생성
-model = keras.Sequential()
-model.add(keras.layers.Dense(32, activation="sigmoid", input_shape=(28*28,)))
-model.add(keras.layers.Dense(32, activation="sigmoid"))
-model.add(keras.layers.Dense(10, activation="sigmoid"))
+strategy = tf.distribute.get_strategy()
+
+with strategy.scope():
+   model = keras.Sequential([
+        keras.layers.Dense(32, activation='sigmoid', input_shape=(28*28,)),
+        keras.layers.Dense(32, activation='sigmoid'),
+        keras.layers.Dense(10, activation='sigmoid')])
 
 #모델컴파일
-model.compile(optimizer=keras.optimizers.SGD(learning_rate=0.1), loss="categorical_crossentropy", metrics=['accuracy'])
-model.summary()
+   model.compile(optimizer=keras.optimizers.SGD(learning_rate=0.1), loss="categorical_crossentropy", metrics=['accuracy'])
+   model.summary()
 
 #모델훈련
-model.fit(x=x_train, y=y_train, batch_size=128, epochs=10, validation_data=(x_test, y_test))
+   model.fit(x=x_train, y=y_train, batch_size=128, epochs=10, validation_data=(x_test, y_test))
 
 #모델 평가
-model.evaluate(x_test, y_test )
+   model.evaluate(x_test, y_test )
