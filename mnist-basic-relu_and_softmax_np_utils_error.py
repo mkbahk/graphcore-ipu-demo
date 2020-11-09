@@ -5,6 +5,9 @@ from tensorflow.keras import utils
 from tensorflow.keras.datasets import mnist
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense, Activation
+import time
+
+start = time.time() #시작시간 저장
 
 # 1. 데이타셋 준비하기
 (X_train, Y_train), (X_test, Y_test) = mnist.load_data()
@@ -36,3 +39,5 @@ model.fit(x=X_train, y=Y_train, epochs=10, batch_size=8, validation_data=(X_val,
 # 5. 추론Inference
 loss_and_metrics = model.evaluate(x=X_test, y=Y_test, batch_size=8)
 print("loss_and_metrics : " + str(loss_and_metrics))
+
+print("Running Time :", round(time.time() - start, 2), "(Sec.)") # 현재시간-시작시간= 실행시간
