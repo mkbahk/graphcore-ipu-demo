@@ -80,7 +80,7 @@ pip3 install nbconvert==5.4.1
 
 //xxxx는 포트번호입니다.1024 이상 번호를 사용하세요.
 jupyter notebook --ip=0.0.0.0 --port=xxxx --allow-root & 
-
+예) jupyter notebook --ip=0.0.0.0 --port=8899 --allow-root & 
 
 //------------------------------------------
 //gc-profile 사용할 경우 옵션으로 설치가능
