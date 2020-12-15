@@ -1,4 +1,6 @@
-#Acquiring dataset
+#
+# Acquiring dataset
+#
 # wget https://www.itl.nist.gov/iaui/vip/cs_links/EMNIST/gzip.zip
 # unzip gzip.zip 
 # rm gzip.zip
@@ -48,7 +50,6 @@ class_weights = dict(enumerate(compute_class_weight('balanced', unique_classes, 
 y_train = tf.keras.utils.to_categorical(y_train, num_classes)
 y_test = tf.keras.utils.to_categorical(y_test, num_classes)
 
-
 #
 # Create Model
 #
@@ -73,6 +74,7 @@ def createmodel():
         Dropout(0.4),
         Dense(num_classes, activation='softmax'),
     ])
+#end of def:
 
 # setting up model to run on cpu, or gpu when avaiable
 print("Building Model structure...")
@@ -123,9 +125,8 @@ print(y_pred)
 print("Save Model, name cnn_emnist.h5...")
 model.save("cnn_emnist.h5")
 
-
+#
 # pip install tensorflowjs
 # rm -rf jsmodel/
 # tensorflowjs_converter --input_format keras "cnn_emnist.h5" ./jsmodel
 # zip -r jsmodel.zip jsmodel/
-
