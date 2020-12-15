@@ -4,7 +4,7 @@ import time
 import os
 from tensorflow.python import ipu
 
-
+# cpu, gpu, tpu, ipu통합 검출 및 수행환경 예
 if tf.__version__[0] != '2':
     raise ImportError("TensorFlow 2 is required for this example")
     
@@ -78,12 +78,14 @@ def create_train_dataset():
     train_ds = tf.data.Dataset.from_tensor_slices((x_train, y_train)).shuffle(60000).batch(1, drop_remainder=True)
     train_ds = train_ds.map(lambda d, l: (tf.cast(d, tf.float32), tf.cast(l, tf.float32)))
     return train_ds.repeat()
+#end of def:
 
 def create_test_dataset():
     print("==============================Processing Test  DataSet==============================\n\n")
     test_ds = tf.data.Dataset.from_tensor_slices((x_test, y_test)).shuffle(10000).batch(1, drop_remainder=True)
     test_ds = test_ds.map(lambda d, l: (tf.cast(d, tf.float32), tf.cast(l, tf.float32)))
     return test_ds.repeat()
+#end of def:
 
 # Create the model using the IPU-specific Sequential class instead of the
 # standard tf.keras.Sequential class
@@ -98,7 +100,7 @@ def create_model():
     
       model.compile(loss = tf.keras.losses.SparseCategoricalCrossentropy(), 
                   optimizer = tf.keras.optimizers.Adam(), 
-#                  experimental_steps_per_execution = 50, 
+      #           experimental_steps_per_execution = 50, 
                   metrics=['sparse_categorical_accuracy'])
       return model
    
@@ -112,10 +114,10 @@ def create_model():
     
       model.compile(loss = tf.keras.losses.SparseCategoricalCrossentropy(), 
                   optimizer = tf.keras.optimizers.Adam(), 
-#                  experimental_steps_per_execution = 50, 
+      #           experimental_steps_per_execution = 50, 
                   metrics=['sparse_categorical_accuracy'])
       return model
-
+#end of def:
 
 
 def main():
@@ -144,10 +146,9 @@ def main():
       print("\n\n==============================Finished Training by....==============================")
 
    #end of with:
-
+#end of def:
 
 if __name__ == '__main__':
     main()
 
 print("Running Time :", round(time.time() - start, 2),"(Sec.)")  # 현재시각 - 시작시간 = 실행 시간
-
