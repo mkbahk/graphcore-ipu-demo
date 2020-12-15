@@ -11,7 +11,7 @@ from tensorflow import keras
 y_train = keras.utils.to_categorical(y=y_train, num_classes = 10)
 y_test = keras.utils.to_categorical(y=y_test, num_classes=10)
 
-#Reshaping DataSet
+# Reshaping DataSet
 x_train = x_train.reshape(60000, 28*28)
 x_test = x_test.reshape(10000, 28*28)
 print(y_train.shape, y_test.shape)
