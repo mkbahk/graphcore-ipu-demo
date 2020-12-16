@@ -33,7 +33,7 @@ source /home/$USER/poplar_sdk-ubuntu_18_04-1.4.0+365-665f971c8f/poplar-ubuntu_18
 source /home/$USER/poplar_sdk-ubuntu_18_04-1.4.0+365-665f971c8f/popart-ubuntu_18_04-1.4.0+5352-e86081acc9/enable.sh
 
 //driver 정상설치 확인명령
-modinfo ipu-driver
+modinfo ipu_driver
 
 //poplar 정상설치 확인명령
 popc --version
