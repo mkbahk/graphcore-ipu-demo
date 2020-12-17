@@ -144,3 +144,11 @@ $ docker run hello-world
 또는
 
 sudo chmod 666 /var/run/docker.sock 
+
+
+//------------------------------------------
+// IPU-POD16,64 사용법
+//------------------------------------------
+vipu --config {사용자}.vipu-cli.hcl list allocation
+vipu --config {사용자}.vipu-cli.hcl create partition kbpt1 --size {할당된IIPU숫자*4개} --reconfigurable
+
