@@ -1,5 +1,11 @@
-//8440  서버에 접속
+//8440 서버에 접속
 ssh user_id@106.246.237.171
+
+//IPU-POD16 접속
+ssh user_id@211.214.213.60
+
+//IPU-POD64 접속
+ssh user_id@211.214.213.70
 
 //------------------------------------------
 // Graphcore IPU Driver, Poplar Lib, PopArt Framework 설치
@@ -147,7 +153,13 @@ sudo chmod 666 /var/run/docker.sock
 
 
 //------------------------------------------
-// IPU-POD16,64 사용법
+// IPU-POD16,64 관리자 수행(할당)명령
+//------------------------------------------
+vipu-admin create cluster cl-default --agents ag1,ag2,ag3,ag4,ag5,ag6,ag7,ag8,ag9,ag10,ag11,ag12,ag13,ag14,ag15,ag16
+vipu-admin create allocation project1 --agents ag1,ag2,ag3,ag4
+
+//------------------------------------------
+// IPU-POD16,64 사용자 수준 사용명령
 //------------------------------------------
 vipu --config {사용자}.vipu-cli.hcl list allocation
 vipu --config {사용자}.vipu-cli.hcl create partition kbpt1 --size {할당된IIPU숫자*4개} --reconfigurable
