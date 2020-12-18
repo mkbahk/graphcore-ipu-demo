@@ -36,13 +36,13 @@ x_test = x_test[..., tf.newaxis]
 
 def create_train_dataset():
     print("==============================Processing Training DataSet==============================\n\n")
-    train_ds = tf.data.Dataset.from_tensor_slices((x_train, y_train)).shuffle(60000).batch(1, drop_remainder=True)
+    train_ds = tf.data.Dataset.from_tensor_slices((x_train, y_train)).shuffle(60000).batch(2000, drop_remainder=True)
     train_ds = train_ds.map(lambda d, l: (tf.cast(d, tf.float32), tf.cast(l, tf.float32)))
     return train_ds.repeat()
 
 def create_test_dataset():
     print("==============================Processing Test  DataSet==============================\n\n")
-    test_ds = tf.data.Dataset.from_tensor_slices((x_test, y_test)).shuffle(10000).batch(1, drop_remainder=True)
+    test_ds = tf.data.Dataset.from_tensor_slices((x_test, y_test)).shuffle(10000).batch(2000, drop_remainder=True)
     test_ds = test_ds.map(lambda d, l: (tf.cast(d, tf.float32), tf.cast(l, tf.float32)))
     return test_ds.repeat()
 
@@ -76,7 +76,7 @@ def main():
       model = create_model()
 
       print("==============================Model Training ==============================\n\n")
-      model.fit(ds1, steps_per_epoch=2000, epochs=50)
+      model.fit(ds1, steps_per_epoch=30, epochs=50)
 
       print("\n\n==============================Checking the result==============================\n\n")
       (loss, accuracy ) = model.evaluate(ds2, steps=1000)
