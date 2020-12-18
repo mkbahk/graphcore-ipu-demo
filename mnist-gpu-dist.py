@@ -76,10 +76,10 @@ def main():
       model = create_model()
 
       print("==============================Model Training ==============================\n\n")
-      model.fit(ds1, steps_per_epoch=2000, epochs=10)
+      model.fit(ds1, steps_per_epoch=2000, epochs=50)
 
       print("\n\n==============================Checking the result==============================\n\n")
-      loss, accuracy = model.evaluate(ds2, steps=1000)
+      (loss, accuracy ) = model.evaluate(ds2, steps=1000)
 
       print("Validation loss: {}".format(loss))
 
