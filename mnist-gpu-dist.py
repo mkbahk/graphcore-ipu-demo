@@ -20,7 +20,7 @@ else:
   strategy = tf.distribute.get_strategy() # default strategy that works on CPU and single GPU
   print('\n\nRunning on single GPU ', gpus[0].name)
   
-print("\n\nNumber of accelerators: ", strategy.num_replicas_in_sync,"\n\n")
+print("\n\nNumber of accelerators(GPU): ", strategy.num_replicas_in_sync,"\n\n")
 
 # The input data and labels.
 mnist = tf.keras.datasets.mnist
