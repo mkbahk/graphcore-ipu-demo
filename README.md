@@ -1,4 +1,5 @@
-DataSet-NetworkName-language-{fequential, functional, subclassing}.{cpu,cpu-dist,gpu-dist,tpu-dist,ipu-dist}.Technology.py
+# 파일명 명명규칙
+DataSet-NetworkName-language-{sequential, functional, subclassing}.{cpu,cpu-dist,gpu-dist,tpu-dist,ipu-dist}.Technologies.py
 
 # graphcore-ipu-demo
 영국 Graphcore 한국내 총판인 메가존클라우드(주) AI System Group에서 운영하는 깃트입니다.
