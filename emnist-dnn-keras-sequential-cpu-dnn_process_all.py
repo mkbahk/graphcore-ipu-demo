@@ -130,3 +130,4 @@ model.save("cnn_emnist.h5")
 # rm -rf jsmodel/
 # tensorflowjs_converter --input_format keras "cnn_emnist.h5" ./jsmodel
 # zip -r jsmodel.zip jsmodel/
+#
