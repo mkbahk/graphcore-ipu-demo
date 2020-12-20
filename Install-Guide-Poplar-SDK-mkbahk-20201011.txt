@@ -7,6 +7,9 @@ ssh user_id@211.214.213.60
 //IPU-POD64 접속
 ssh user_id@211.214.213.70
 
+//NVIDIA-V100
+ssh user_id@106.246.237.171
+
 //------------------------------------------
 // Graphcore IPU Driver, Poplar Lib, PopArt Framework 설치
 //------------------------------------------
