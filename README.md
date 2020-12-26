@@ -7,7 +7,8 @@ DataSet-NetworkName-language-{sequential, functional, subclassing}.{cpu,cpu-dist
 
 ## 데모 IPU 서버에 접속
 시스템|접속방법
-1.POD16|ssh user_id@211.214.213.60
-2.POD64|ssh user_id@211.214.213.70
-3.IPU-Server16|ssh user_id@106.246.237.171
-4.V100|ssh user_id@106.246.237.174
+------|-------
+IPU-POD16|ssh user_id@211.214.213.60
+IPU-POD64|ssh user_id@211.214.213.70
+IPU-Server16|ssh user_id@106.246.237.171
+V100|ssh user_id@106.246.237.174
