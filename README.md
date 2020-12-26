@@ -12,3 +12,12 @@ IPU-POD16|ssh user_id@211.214.213.60
 IPU-POD64|ssh user_id@211.214.213.70
 IPU-Server16|ssh user_id@106.246.237.171
 V100|ssh user_id@106.246.237.174
+
+### 할일들
+- [ ] MNIST Subclassig Version 추가
+- [ ] MNIST CNN(Convolution Neutral Network) 추가
+- [x] EMNIST를 활용한 Deep Learning 전체 프로세스 예제추가
+- [ ] Fashion MNIST CNN 예제추가 
+- [x] @mentions, #refs, [links](), **formatting**, and <del>tags</del> supported
+- [x] list syntax required (any unordered or ordered list supported)
+
