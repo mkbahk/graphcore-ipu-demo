@@ -5,7 +5,7 @@
 ### 파일명 명명규칙
 DataSet-NetworkName-language-{sequential, functional, subclassing}.{cpu,cpu-dist,gpu-dist,tpu-dist,ipu-dist}.Technologies.py
 
-### 데모 IPU 서버에 접속
+### 데모용 IPU서버들에 접속하는 방법
 시스템|접속방법
 ------|-------
 IPU-POD16|ssh user_id@211.214.213.60
