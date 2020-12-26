@@ -6,14 +6,6 @@
 ### :file_folder: 파일명 명명규칙
 DataSet-NetworkName-language-{sequential, functional, subclassing}.{cpu,cpu-dist,gpu-dist,tpu-dist,ipu-dist}.Technologies.py
 
-### :pirate_flag: 데모용 IPU서버들에 접속하는 방법
-시스템|접속방법
-------|-------
-IPU-POD16|ssh user_id@211.214.213.60
-IPU-POD64|ssh user_id@211.214.213.70
-IPU-Server16|ssh user_id@106.246.237.171
-V100|ssh user_id@106.246.237.174
-
 ### :hammer_and_wrench: 할 일 들
 - [ ] MNIST Subclassig Version 추가
 - [ ] MNIST CNN(Convolution Neutral Network) 추가
