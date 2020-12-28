@@ -15,8 +15,8 @@ y_test = keras.utils.to_categorical(y=y_test, num_classes=10)
 #Reshaping DataSet
 x_train = x_train.reshape(60000, 28*28)
 x_test = x_test.reshape(10000, 28*28)
-print(y_train.shape, y_test.shape)
-print(x_train.shape, x_test.shape)
+print("Y값 데이타형", y_train.shape, y_test.shape)
+print("X값 데이타형", x_train.shape, x_test.shape)
 
 start = time.time() # 시작 시간 저장
 
