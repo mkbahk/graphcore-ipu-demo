@@ -1,5 +1,7 @@
 # Module Import
 from tensorflow import keras
+import time
+
 
 # Load MNIST DataSet
 (x_train, y_train), (x_test, y_test) = keras.datasets.mnist.load_data()
@@ -16,6 +18,8 @@ x_test = x_test.reshape(10000, 28*28)
 print(y_train.shape, y_test.shape)
 print(x_train.shape, x_test.shape)
 
+start = time.time() # 시작 시간 저장
+
 #모델생성
 model = keras.Sequential()
 model.add(keras.layers.Dense(32, activation="sigmoid", input_shape=(28*28,)))
@@ -27,7 +31,11 @@ model.compile(optimizer=keras.optimizers.SGD(learning_rate=0.1), loss="categoric
 model.summary()
 
 #모델훈련
-model.fit(x=x_train, y=y_train, batch_size=128, epochs=10, validation_data=(x_test, y_test))
+model.fit(x=x_train, y=y_train, batch_size=128, epochs=50, validation_data=(x_test, y_test))
 
 #모델 평가
 model.evaluate(x_test, y_test )
+
+print("Running Time :", round(time.time() - start, 2),"(Sec.)")  # 현재시각 - 시작시간 = 실행 시간
+
+
