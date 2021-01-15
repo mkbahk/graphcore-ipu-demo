@@ -4,7 +4,6 @@ from tensorflow import keras
 import time
 import os
 
-
 if tf.__version__[0] != '2':
     raise ImportError("TensorFlow 2 is required for this example")
 #end of if  
@@ -27,6 +26,8 @@ print("\n\nNumber of accelerators(GPU): ", strategy.num_replicas_in_sync,"\n\n")
 
 # The input data and labels.
 mnist = tf.keras.datasets.mnist
+
+start = time.time() # 시작 시간 저장
 
 (x_train, y_train), (x_test, y_test) = mnist.load_data()
 (x_train, x_test) = (x_train / 255.0, x_test / 255.0)
@@ -63,9 +64,6 @@ def create_model():
     return model
 #end of def
 
-
-start = time.time() # 시작 시간 저장
-
 def main():
     # Get the training dataset.
     print("==============================Getting Training DataSet==============================\n\n")
@@ -80,12 +78,11 @@ def main():
 
     print("==============================Model Training==============================\n\n")
 
-
     with strategy.scope():
       model.fit(ds1, steps_per_epoch=30, epochs=50)
 
       print("\n\n==============================Checking the result==============================\n\n")
-      (loss, accuracy ) = model.evaluate(ds2, steps=5)
+      (loss, accuracy) = model.evaluate(ds2, steps=5)
 
       print("Validation loss: {}".format(loss))
 

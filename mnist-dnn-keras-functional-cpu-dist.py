@@ -1,13 +1,16 @@
-# Copyright 2020 Graphcore Ltd.
+# Copyleft 2021 Megazone Cloud, Inc.
 import tensorflow as tf
 from tensorflow import keras
 import time
-
-print(tf.config.list_physical_devices("CPU"), "\n\n")
+import os
 
 if tf.__version__[0] != '2':
     raise ImportError("TensorFlow 2 is required for this example")
+#end of if
 
+print("Tensorflow version " + tf.__version__)
+print(tf.config.list_physical_devices("CPU"))
+strategy = tf.distribute.get_strategy()
 # The input data and labels.
 mnist = tf.keras.datasets.mnist
 
@@ -34,49 +37,49 @@ def create_test_dataset():
     return test_ds.repeat()
 #end of def
 
-
-# Create the model using the IPU-specific Sequential class instead of the
 # standard tf.keras.Sequential class
 def create_model():
-    model = keras.Sequential([
+    model = tf.keras.Sequential([
         keras.layers.Flatten(),
         keras.layers.Dense(128, activation='relu'),
         keras.layers.Dense(256, activation='relu'),
         keras.layers.Dense(128, activation='relu'),
         keras.layers.Dense(10, activation='softmax')])
+    model.compile(loss = tf.keras.losses.SparseCategoricalCrossentropy(),
+                  optimizer = tf.keras.optimizers.Adam(),
+                  metrics=['sparse_categorical_accuracy'])
     return model
 #end of def
 
-strategy = tf.distribute.get_strategy()
-
 def main():
-   # Get the training dataset.
-   print("==============================Getting Training DataSet==============================\n\n")
-   ds1 = create_train_dataset()
-   print("==============================Getting Test DataSet==============================\n\n")
-   ds2 = create_test_dataset()
+    # Get the training dataset.
+    print("==============================Getting Training DataSet==============================\n\n")
+    ds1 = create_train_dataset()
 
-   # Create an instance of the model.
-   print("==============================Building Model==============================\n\n")
-   model = create_model()
+    print("==============================Getting Test DataSet==============================\n\n")
+    ds2 = create_test_dataset()
 
-   # Train the model.
-   print("==============================Start Model Training==============================\n\n")
+    # Create an instance of the model.
+    print("==============================Building Model==============================\n\n")
+    model = create_model()
 
-   with strategy.scope():
-      model.compile(loss = tf.keras.losses.SparseCategoricalCrossentropy(), optimizer = tf.keras.optimizers.Adam(),  metrics=['sparse_categorical_accuracy'])
+    print("==============================Model Training==============================\n\n")
+
+   with strategy.scope(): 
       model.fit(ds1, steps_per_epoch=30, epochs=50)
 
       print("\n\n==============================Checking the result==============================\n\n")
       (loss, accuracy) = model.evaluate(ds2, steps=5)
-      print("Validation loss: {}".format(loss))
-      print("Validation accuracy: {}%".format(100.0 * accuracy))
-      print("\n\n==============================Job Done by Intel/AMD CPUs !!!==============================")
-   #end of with:
-#end of main
 
+      print("Validation loss: {}".format(loss))
+
+      print("Validation accuracy: {}%".format(100.0 * accuracy))
+      print("\n\n==============================Job Done...==============================")
+   #end of with:
+#end of def
 
 if __name__ == '__main__':
     main()
+#end of if
 
 print("Running Time :", round(time.time() - start, 2),"(Sec.)")  # 현재시각 - 시작시간 = 실행 시간
