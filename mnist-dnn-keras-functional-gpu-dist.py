@@ -51,16 +51,16 @@ def create_test_dataset():
 
 # standard tf.keras.Sequential class
 def create_model():
-   model = tf.keras.Sequential([
-      keras.layers.Flatten(),
-      keras.layers.Dense(128, activation='relu'),
-      keras.layers.Dense(256, activation='relu'),
-      keras.layers.Dense(128, activation='relu'),
-      keras.layers.Dense(10, activation='softmax')])
-   model.compile(loss = tf.keras.losses.SparseCategoricalCrossentropy(), 
-                 optimizer = tf.keras.optimizers.Adam(),
-                 metrics=['sparse_categorical_accuracy'])
-   return model
+    model = tf.keras.Sequential([
+        keras.layers.Flatten(),
+        keras.layers.Dense(128, activation='relu'),
+        keras.layers.Dense(256, activation='relu'),
+        keras.layers.Dense(128, activation='relu'),
+        keras.layers.Dense(10, activation='softmax')])
+    model.compile(loss = tf.keras.losses.SparseCategoricalCrossentropy(), 
+                  optimizer = tf.keras.optimizers.Adam(),
+                  metrics=['sparse_categorical_accuracy'])
+    return model
 #end of def
 
 
