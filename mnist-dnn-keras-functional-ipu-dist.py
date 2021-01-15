@@ -2,6 +2,7 @@
 import tensorflow as tf
 from tensorflow import keras
 import time
+import os
 
 from tensorflow.python import ipu
 print(tf.config.list_physical_devices("IPU"), "\n\n")
@@ -18,7 +19,7 @@ if tf.__version__[0] != '2':
 # The input data and labels.
 mnist = tf.keras.datasets.mnist
 
-start = time.time() # 시작 시간 저장
+
 
 (x_train, y_train), (x_test, y_test) = mnist.load_data()
 (x_train, x_test) = (x_train / 255.0, x_test / 255.0)
@@ -53,6 +54,7 @@ def create_model():
         keras.layers.Dense(10, activation='softmax')])
     return model
 #end of def
+start = time.time() # 시작 시간 저장
 
 def main():
    # Get the training dataset.

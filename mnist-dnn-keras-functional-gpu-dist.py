@@ -25,7 +25,6 @@ print("\n\nNumber of accelerators(GPU): ", strategy.num_replicas_in_sync,"\n\n")
 # The input data and labels.
 mnist = tf.keras.datasets.mnist
 
-#start = time.time() # 시작 시간 저장
 
 (x_train, y_train), (x_test, y_test) = mnist.load_data()
 (x_train, x_test) = (x_train / 255.0, x_test / 255.0)
@@ -63,19 +62,20 @@ def create_model():
 start = time.time() # 시작 시간 저장
 
 def main():
-   with strategy.scope():
-      # Get the training dataset.
-      print("==============================Getting Training DataSet==============================\n\n")
-      ds1 = create_train_dataset()
 
-      print("==============================Getting Test DataSet==============================\n\n")
-      ds2 = create_test_dataset()
+    # Get the training dataset.
+    print("==============================Getting Training DataSet==============================\n\n")
+    ds1 = create_train_dataset()
 
-      # Create an instance of the model.
-      print("==============================Building Model & Compile ==============================\n\n")
-      model = create_model()
+    print("==============================Getting Test DataSet==============================\n\n")
+    ds2 = create_test_dataset()
 
-      print("==============================Model Training ==============================\n\n")
+    # Create an instance of the model.
+    print("==============================Building Model & Compile ==============================\n\n")
+    model = create_model()
+
+    print("==============================Model Training ==============================\n\n")
+    with strategy.scope():
       model.fit(ds1, steps_per_epoch=30, epochs=50)
 
       print("\n\n==============================Checking the result==============================\n\n")
@@ -93,4 +93,4 @@ def main():
 if __name__ == '__main__':
     main()
 
-print("실행시간 :", round(time.time() - start, 2),"(초)")  # 현재시각 - 시작시간 = 실행 시간
+print("Running Time :", round(time.time() - start, 2),"(Sec.)")  # 현재시각 - 시작시간 = 실행 시간
