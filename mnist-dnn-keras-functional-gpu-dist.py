@@ -1,3 +1,4 @@
+# Copyleft 2021 Megazone Cloud, Inc.
 import tensorflow as tf
 from tensorflow import keras
 import time
@@ -6,6 +7,7 @@ import os
 
 if tf.__version__[0] != '2':
     raise ImportError("TensorFlow 2 is required for this example")
+#end of if  
     
 print("Tensorflow version " + tf.__version__)
 print(tf.config.list_physical_devices("CPU"))
@@ -19,12 +21,12 @@ if len(gpus) > 1:
 else:
   strategy = tf.distribute.get_strategy() # default strategy that works on CPU and single GPU
   print('\n\nRunning on single GPU ', gpus[0].name)
+#end of if
   
 print("\n\nNumber of accelerators(GPU): ", strategy.num_replicas_in_sync,"\n\n")
 
 # The input data and labels.
 mnist = tf.keras.datasets.mnist
-
 
 (x_train, y_train), (x_test, y_test) = mnist.load_data()
 (x_train, x_test) = (x_train / 255.0, x_test / 255.0)
@@ -38,12 +40,14 @@ def create_train_dataset():
     train_ds = tf.data.Dataset.from_tensor_slices((x_train, y_train)).shuffle(60000).batch(2000, drop_remainder=True)
     train_ds = train_ds.map(lambda d, l: (tf.cast(d, tf.float32), tf.cast(l, tf.float32)))
     return train_ds.repeat()
+#end of def
 
 def create_test_dataset():
     print("==============================Processing Test  DataSet==============================\n\n")
     test_ds = tf.data.Dataset.from_tensor_slices((x_test, y_test)).shuffle(10000).batch(2000, drop_remainder=True)
     test_ds = test_ds.map(lambda d, l: (tf.cast(d, tf.float32), tf.cast(l, tf.float32)))
     return test_ds.repeat()
+#end of def
 
 # standard tf.keras.Sequential class
 def create_model():
@@ -57,12 +61,12 @@ def create_model():
                  optimizer = tf.keras.optimizers.Adam(),
                  metrics=['sparse_categorical_accuracy'])
    return model
+#end of def
 
 
 start = time.time() # 시작 시간 저장
 
 def main():
-
     # Get the training dataset.
     print("==============================Getting Training DataSet==============================\n\n")
     ds1 = create_train_dataset()
@@ -71,10 +75,12 @@ def main():
     ds2 = create_test_dataset()
 
     # Create an instance of the model.
-    print("==============================Building Model & Compile ==============================\n\n")
+    print("==============================Building Model==============================\n\n")
     model = create_model()
 
-    print("==============================Model Training ==============================\n\n")
+    print("==============================Model Training==============================\n\n")
+
+
     with strategy.scope():
       model.fit(ds1, steps_per_epoch=30, epochs=50)
 
@@ -84,13 +90,12 @@ def main():
       print("Validation loss: {}".format(loss))
 
       print("Validation accuracy: {}%".format(100.0 * accuracy))
-
-      print("\n\n==============================Finished Training by....==============================")
-
+      print("\n\n==============================Job Done...==============================")
    #end of with:
-
+#end of def
 
 if __name__ == '__main__':
     main()
+#end of if
 
 print("Running Time :", round(time.time() - start, 2),"(Sec.)")  # 현재시각 - 시작시간 = 실행 시간
