@@ -65,17 +65,17 @@ def main():
 
     print("==============================Model Training==============================\n\n")
 
-   with strategy.scope(): 
-      model.fit(ds1, steps_per_epoch=30, epochs=50)
+    with strategy.scope(): 
+        model.fit(ds1, steps_per_epoch=30, epochs=50)
 
-      print("\n\n==============================Checking the result==============================\n\n")
-      (loss, accuracy) = model.evaluate(ds2, steps=5)
+        print("\n\n==============================Checking the result==============================\n\n")
+        (loss, accuracy) = model.evaluate(ds2, steps=5)
 
-      print("Validation loss: {}".format(loss))
+        print("Validation loss: {}".format(loss))
 
-      print("Validation accuracy: {}%".format(100.0 * accuracy))
-      print("\n\n==============================Job Done...==============================")
-   #end of with:
+        print("Validation accuracy: {}%".format(100.0 * accuracy))
+        print("\n\n==============================Job Done...==============================")
+    #end of with:
 #end of def
 
 if __name__ == '__main__':
