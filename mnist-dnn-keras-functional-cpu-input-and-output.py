@@ -31,15 +31,15 @@ def create_test_dataset():
     return test_ds.repeat()
 #end of def
 
-def create_model(width=28, height=28, depth=1):
-    inputs = tf.keras.Input(shape=(width, height, depth))
+def create_model(ds1):
+    inputs = tf.keras.Input(ds1)
 
     x = keras.layers.Dense(128, activation='relu')(inputs)
     x = keras.layers.Dense(256, activation='relu')(x)
     x = keras.layers.Dense(128, activation='relu')(x)
 
     outputs = keras.layers.Dense(10, activation='softmax')(x)
-    
+
     # Defined the model.
     model = tf.keras.Model(inputs, outputs, name="dnn")
     return model
@@ -52,21 +52,20 @@ def main():
       print("==============================Getting Test DataSet==============================\n\n")
       ds2 = create_test_dataset()
 
-      with strategy.scope():   
+      with strategy.scope():
         # Create an instance of the model.
         print("==============================Building Model==============================\n\n")
-        model = create_model()
+        model = create_model(ds1)
 
         model.summary()
 
-        print("==============================Building Compile==============================\n\n")      
-        model.compile(loss = tf.keras.losses.SparseCategoricalCrossentropy(), 
-                  optimizer = tf.keras.optimizers.Adam(), 
-                  steps_per_execution = 50, 
+        print("==============================Building Compile==============================\n\n")
+        model.compile(loss = tf.keras.losses.SparseCategoricalCrossentropy(),
+                  optimizer = tf.keras.optimizers.Adam(),
                   metrics=['sparse_categorical_accuracy'])
-        
+
         print("==============================Model Training ==============================\n\n")
-        model.fit(ds1, steps_per_epoch=2000, epochs=50)
+        model.fit(ds1, steps_per_epoch=20, epochs=50)
 
         print("\n\n==============================Checking the result==============================\n\n")
         loss, accuracy = model.evaluate(ds2, steps=1000)
