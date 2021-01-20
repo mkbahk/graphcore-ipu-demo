@@ -1,4 +1,4 @@
-# Copyleft 2021 Megazone Cloud, Inc.
+#Copyleft 2021 Megazone Cloud Corp.
 import tensorflow as tf
 from tensorflow import keras
 import time

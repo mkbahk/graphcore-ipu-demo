@@ -1,4 +1,4 @@
-# Copyleft 2021 Megazone Cloud, Inc.
+#Copyleft 2021 Megazone Cloud Corp.
 import tensorflow as tf
 from tensorflow import keras
 import time
@@ -69,6 +69,7 @@ def main():
     model = create_model()
 
     print("==============================Model Training==============================\n\n")
+
 
     with strategy.scope():
       model.fit(ds1, steps_per_epoch=30, epochs=50)
