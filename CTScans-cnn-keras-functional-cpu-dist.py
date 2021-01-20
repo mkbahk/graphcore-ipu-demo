@@ -101,9 +101,9 @@ abnormal_scan_paths = [
 ]
 
 print("CT scans with normal lung tissue: " + str(len(normal_scan_paths)))
-print("CT scans with abnormal lung tissue: " + str(len(abnormal_scan_paths)))
-
-
+print("CT scans with abnormal lung tissue: " + str(len(abnormal_scan_paths))
+      
+print("\n\nSanning 3D images and resizing, It takes around 10 Minites, Please wait a minites")
 # Each scan is resized across height, width, and depth and rescaled.
 abnormal_scans = np.array([process_scan(path) for path in abnormal_scan_paths])
 normal_scans = np.array([process_scan(path) for path in normal_scan_paths])
