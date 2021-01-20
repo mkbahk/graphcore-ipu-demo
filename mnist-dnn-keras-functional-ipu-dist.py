@@ -11,13 +11,11 @@ if tf.__version__[0] != '2':
 
 from tensorflow.python import ipu
 print(tf.config.list_physical_devices("IPU"), "\n\n")
-
-# Configure the IPU system
 cfg = ipu.utils.create_ipu_config()
 cfg = ipu.utils.auto_select_ipus(cfg, 2)
-#cfg = ipu.utils.select_ipus(cfg, indices=[0])
 ipu.utils.configure_ipu_system(cfg)
 strategy = ipu.ipu_strategy.IPUStrategy()
+
 # The input data and labels.
 mnist = tf.keras.datasets.mnist
 
@@ -56,8 +54,7 @@ def create_model():
     return model
 #end of def
 
-
-start = time.time() # ì‹œì‘ ì‹œê°„ ì €ì¥
+start = time.time() # ?‹œ?‘ ?‹œê°? ????¥
 
 def main():
     # Get the training dataset.
@@ -91,4 +88,4 @@ if __name__ == '__main__':
     main()
 #end of if
 
-print("Running Time :", round(time.time() - start, 2),"(Sec.)")  # í˜„ì¬ì‹œê° - ì‹œì‘ì‹œê°„ = ì‹¤í–‰ ì‹œê°„
+print("Running Time :", round(time.time() - start, 2),"(Sec.)")  # ?˜„?¬?‹œê°? - ?‹œ?‘?‹œê°? = ?‹¤?–‰ ?‹œê°?

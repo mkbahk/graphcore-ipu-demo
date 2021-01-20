@@ -4,30 +4,20 @@ from tensorflow import keras
 import time
 import os
 
+
 if tf.__version__[0] != '2':
     raise ImportError("TensorFlow 2 is required for this example")
 #end of if  
     
-print("Tensorflow version " + tf.__version__)
-print(tf.config.list_physical_devices("CPU"))
 print(tf.config.list_physical_devices("GPU"))
-
 gpus = tf.config.experimental.list_logical_devices("GPU")
+strategy = tf.distribute.MirroredStrategy([gpu.name for gpu in gpus])
 
-if len(gpus) > 1:
-  strategy = tf.distribute.MirroredStrategy([gpu.name for gpu in gpus])
-  print('\n\nRunning on multiple GPUs ', [gpu.name for gpu in gpus])
-else:
-  strategy = tf.distribute.get_strategy() # default strategy that works on CPU and single GPU
-  print('\n\nRunning on single GPU ', gpus[0].name)
-#end of if
-  
+print('\n\nRunning on multiple GPUs ', [gpu.name for gpu in gpus])
 print("\n\nNumber of accelerators(GPU): ", strategy.num_replicas_in_sync,"\n\n")
 
 # The input data and labels.
 mnist = tf.keras.datasets.mnist
-
-start = time.time() # ì‹œì‘ ì‹œê°„ ì €ì¥
 
 (x_train, y_train), (x_test, y_test) = mnist.load_data()
 (x_train, x_test) = (x_train / 255.0, x_test / 255.0)
@@ -64,6 +54,8 @@ def create_model():
     return model
 #end of def
 
+start = time.time() # ?‹œ?‘ ?‹œê°? ????¥
+
 def main():
     # Get the training dataset.
     print("==============================Getting Training DataSet==============================\n\n")
@@ -95,4 +87,4 @@ if __name__ == '__main__':
     main()
 #end of if
 
-print("Running Time :", round(time.time() - start, 2),"(Sec.)")  # í˜„ì¬ì‹œê° - ì‹œì‘ì‹œê°„ = ì‹¤í–‰ ì‹œê°„
+print("Running Time :", round(time.time() - start, 2),"(Sec.)")  # ?˜„?¬?‹œê°? - ?‹œ?‘?‹œê°? = ?‹¤?–‰ ?‹œê°?
