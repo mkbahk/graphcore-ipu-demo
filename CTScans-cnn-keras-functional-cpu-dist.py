@@ -30,9 +30,7 @@ if not os.path.exists("./MosMedData"):
 #end of if
 
 import nibabel as nib
-
 from scipy import ndimage
-
 
 def read_nifti_file(filepath):
     """Read and load volume"""
@@ -102,11 +100,10 @@ abnormal_scan_paths = [
 ]
 
 print("CT scans with normal lung tissue: " + str(len(normal_scan_paths)))
-print("CT scans with abnormal lung tissue: " + str(len(abnormal_scan_paths))
+print("CT scans with abnormal lung tissue: " + str(len(abnormal_scan_paths)))
 
-#수행시간 측정을 위해 현재 시간 저장      
-start = time.time() 
-
+# 수행시간 측정을 위해 현재 시간 저장      
+start = time.time()
 print("\n\nSanning 3D images and resizing, It takes around 10 Minites, Please wait a minites")
 
 # Each scan is resized across height, width, and depth and rescaled.
