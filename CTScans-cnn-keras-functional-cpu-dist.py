@@ -91,16 +91,11 @@ def process_scan(path):
 
 #Folder "CT-0" consist of CT scans having normal lung tissue,
 # no CT-signs of viral pneumonia.
-normal_scan_paths = [
-    os.path.join(os.getcwd(), "MosMedData/CT-0", x)
-    for x in os.listdir("MosMedData/CT-0")
+normal_scan_paths = [os.path.join(os.getcwd(), "MosMedData/CT-0", x) for x in os.listdir("MosMedData/CT-0")
 ]
 # Folder "CT-23" consist of CT scans having several ground-glass opacifications,
 # involvement of lung parenchyma.
-abnormal_scan_paths = [
-    os.path.join(os.getcwd(), "MosMedData/CT-23", x)
-    for x in os.listdir("MosMedData/CT-23")
-]
+abnormal_scan_paths = [os.path.join(os.getcwd(), "MosMedData/CT-23", x) for x in os.listdir("MosMedData/CT-23")]
 
 print("CT scans with normal lung tissue: " + str(len(normal_scan_paths)))
 print("CT scans with abnormal lung tissue: " + str(len(abnormal_scan_paths)))
@@ -123,10 +118,8 @@ x_train = np.concatenate((abnormal_scans[:70], normal_scans[:70]), axis=0)
 y_train = np.concatenate((abnormal_labels[:70], normal_labels[:70]), axis=0)
 x_val = np.concatenate((abnormal_scans[70:], normal_scans[70:]), axis=0)
 y_val = np.concatenate((abnormal_labels[70:], normal_labels[70:]), axis=0)
-print(
-    "Number of samples in train and validation are %d and %d."
-    % (x_train.shape[0], x_val.shape[0])
-)
+
+print("Number of samples in train and validation are %d and %d." % (x_train.shape[0], x_val.shape[0]))
 
 import random
 from scipy import ndimage
@@ -174,19 +167,10 @@ validation_loader = tf.data.Dataset.from_tensor_slices((x_val, y_val))
 
 batch_size = 2
 # Augment the on the fly during training.
-train_dataset = (
-    train_loader.shuffle(len(x_train))
-    .map(train_preprocessing)
-    .batch(batch_size)
-    .prefetch(2)
-)
+train_dataset = (train_loader.shuffle(len(x_train)).map(train_preprocessing).batch(batch_size).prefetch(2))
+
 # Only rescale.
-validation_dataset = (
-    validation_loader.shuffle(len(x_val))
-    .map(validation_preprocessing)
-    .batch(batch_size)
-    .prefetch(2)
-)
+validation_dataset = (validation_loader.shuffle(len(x_val)).map(validation_preprocessing).batch(batch_size).prefetch(2))
 
 import matplotlib.pyplot as plt
 
@@ -207,12 +191,7 @@ def plot_slices(num_rows, num_columns, width, height, data):
     widths = [slc.shape[1] for slc in data[0]]
     fig_width = 12.0
     fig_height = fig_width * sum(heights) / sum(widths)
-    f, axarr = plt.subplots(
-        rows_data,
-        columns_data,
-        figsize=(fig_width, fig_height),
-        gridspec_kw={"height_ratios": heights},
-    )
+    f, axarr = plt.subplots(rows_data, columns_data, figsize=(fig_width, fig_height), gridspec_kw={"height_ratios": heights}, )
     for i in range(rows_data):
         for j in range(columns_data):
             axarr[i, j].imshow(data[i][j], cmap="gray")
@@ -266,31 +245,17 @@ model.summary()
 
 # Compile model.
 initial_learning_rate = 0.0001
-lr_schedule = keras.optimizers.schedules.ExponentialDecay(
-    initial_learning_rate, decay_steps=100000, decay_rate=0.96, staircase=True
-)
-model.compile(
-    loss="binary_crossentropy",
-    optimizer=keras.optimizers.Adam(learning_rate=lr_schedule),
-    metrics=["acc"],
-)
+lr_schedule = keras.optimizers.schedules.ExponentialDecay(initial_learning_rate, decay_steps=100000, decay_rate=0.96, staircase=True)
+
+model.compile(loss="binary_crossentropy", optimizer=keras.optimizers.Adam(learning_rate=lr_schedule), metrics=["acc"], )
 
 # Define callbacks.
-checkpoint_cb = keras.callbacks.ModelCheckpoint(
-    "3d_image_classification.h5", save_best_only=True
-)
+checkpoint_cb = keras.callbacks.ModelCheckpoint("3d_image_classification.h5", save_best_only=True)
 early_stopping_cb = keras.callbacks.EarlyStopping(monitor="val_acc", patience=15)
 
 # Train the model, doing validation at the end of each epoch
 epochs = 100
-model.fit(
-    train_dataset,
-    validation_data=validation_dataset,
-    epochs=epochs,
-    shuffle=True,
-    verbose=2,
-    callbacks=[checkpoint_cb, early_stopping_cb],
-)
+model.fit(train_dataset, validation_data=validation_dataset, epochs=epochs, shuffle=True, verbose=1, callbacks=[checkpoint_cb, early_stopping_cb], )
 
 fig, ax = plt.subplots(1, 2, figsize=(20, 3))
 ax = ax.ravel()
@@ -311,16 +276,13 @@ scores = [1 - prediction[0], prediction[0]]
 
 class_names = ["normal", "abnormal"]
 for score, name in zip(scores, class_names):
-    print(
-        "This model is %.2f percent confident that CT scan is %s"
-        % ((100 * score), name)
-    )
+    print("This model is %.2f percent confident that CT scan is %s" % ((100 * score), name))
 #end of for
 
 #수행된 총 시간 출력
-print("Running Time :", round(time.time() - start, 2),"(Sec.)")  # ?��?��?���? - ?��?��?���? = ?��?�� ?���?
+print("Running Time :", round(time.time() - start, 2),"(Sec.)")
 
-#end of code
+# End of Code
 
 
 

@@ -14,7 +14,7 @@ strategy = tf.distribute.get_strategy()
 # The input data and labels.
 mnist = tf.keras.datasets.mnist
 
-start = time.time() # 시작 시간 저장
+start = time.time()
 
 (x_train, y_train), (x_test, y_test) = mnist.load_data()
 (x_train, x_test) = (x_train / 255.0, x_test / 255.0)
@@ -82,4 +82,5 @@ if __name__ == '__main__':
     main()
 #end of if
 
-print("Running Time :", round(time.time() - start, 2),"(Sec.)")  # 현재시각 - 시작시간 = 실행 시간
+print("Running Time :", round(time.time() - start, 2),"(Sec.)")
+
