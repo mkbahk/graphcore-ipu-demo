@@ -54,7 +54,7 @@ def create_model():
     return model
 #end of def
 
-start = time.time() # ?‹œ?ž‘ ?‹œê°? ????ž¥
+start = time.time() # Save time point of starting
 
 def main():
     # Get the training dataset.
@@ -88,4 +88,4 @@ if __name__ == '__main__':
     main()
 #end of if
 
-print("Running Time :", round(time.time() - start, 2),"(Sec.)")  # ?˜„?ž¬?‹œê°? - ?‹œ?ž‘?‹œê°? = ?‹¤?–‰ ?‹œê°?
+print("Running Time :", round(time.time() - start, 2),"(Sec.)")  # Total running time
