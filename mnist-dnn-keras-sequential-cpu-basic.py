@@ -42,3 +42,5 @@ print("Save Model, name mnist_basic.h5...")
 model.save("mnist_basic.h5")
 
 print("Job Finished....")
+
+#End of code...
