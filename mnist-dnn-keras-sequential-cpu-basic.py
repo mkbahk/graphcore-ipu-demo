@@ -36,3 +36,7 @@ model.fit(x=x_train, y=y_train, batch_size=128, epochs=50, validation_data=(x_te
 model.evaluate(x_test, y_test )
 
 print("Running Time :", round(time.time() - start, 2),"(Sec.)")  # 현재시각 - 시작시간 = 실행 시간
+
+#학습된 모델을 파일형태로 저장->load해 재-학습이나 추론에서 사용하게 함.
+print("Save Model, name mnist_basic.h5...")
+model.save("mnist_basic.h5")
