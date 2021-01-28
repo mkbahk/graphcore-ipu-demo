@@ -51,7 +51,7 @@ y_train = tf.keras.utils.to_categorical(y_train, num_classes)
 y_test = tf.keras.utils.to_categorical(y_test, num_classes)
 
 #
-# Create Model
+# Create Model Structure(layers)
 #
 kernel_size = (5, 5)
 def createmodel():
@@ -77,8 +77,9 @@ def createmodel():
 #end of def:
 
 # setting up model to run on cpu, or gpu when avaiable
-print("Building Model structure...")
+print("Building Model Structure...")
 model = createmodel()
+
 print("Compiling Model...")
 model.compile(loss="categorical_crossentropy",
         optimizer="adam",
