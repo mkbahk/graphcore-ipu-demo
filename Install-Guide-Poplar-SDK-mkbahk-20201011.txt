@@ -1,6 +1,6 @@
-//------------------------------------------
-// Graphcore IPU Driver, Poplar Lib, PopArt Framework 설치
-//------------------------------------------
+//------------------------------------------------------------//
+//   Graphcore IPU Driver, Poplar Lib, PopArt Framework 설치   //
+//------------------------------------------------------------//
 
 //필요한 파일들은 /mnt/GC-SDK 디렉토리에 있습니다.
 // /mnt/data에 있는 사용할 sdk버젼을 자신의 로컬 홈에 복사하세요
@@ -122,11 +122,8 @@ gc-docker --echo --device-id 4 -- --rm -ti graphcore/tools gc-inventory
 
 //gc-docker 명령은 nvidia-docker 처럼 ipu를 자동적으로 물고 올라가기 위한 docker명령의 wrapper명령입니다.
 docker run --device=/dev/ipu4:/dev/ipu4 --device=/dev/ipu4_ex:/dev/ipu4_ex -ti graphcore/tools gc-inventory
-
 //ipu을 low-level로 물고 올라가면서, 로컬시스템의 /home/mkbahk/graphcore-ipu-demo 폴더를 Container내부의 /home/graphcore-ipu-demo로 마운팅하여 바로 사용가능토록 수행
 docker run --device=/dev/ipu4:/dev/ipu4 --device=/dev/ipu4_ex:/dev/ipu4_ex -ti -v /home/mkbahk/graphcore-ipu-demo:/home/graphcore-ipu-demo  30ae7ba65b4f /bin/bash
-
-
 
 gc-docker -- -ti -v /home/me/cat_pics:/cats graphcore/tensorflow ls -a /catsanddog.jpg
 gc-docker -- -ti -e POPLAR_LOG_LEVEL=TRACE graphcore/tensorflow:2 python3
@@ -156,7 +153,7 @@ sudo chmod 666 /var/run/docker.sock
 //------------------------------------------
 // Superuser 계정으로 IPU-POD16,64 관리자 수행(할당)명령 
 //------------------------------------------
-sudo su - vipuuser
+sudo su - ipuuser
 vipu-admin create agent ag1 --host 10.1.2.1 --port 8080
 …
 vipu-admin create cluster cl-torus --topology torus --agents ag1,ag2,ag3,ag4,ag5,ag6,ag7,ag8,ag9,ag10,ag11,ag12,ag13,ag14,ag15,ag16
