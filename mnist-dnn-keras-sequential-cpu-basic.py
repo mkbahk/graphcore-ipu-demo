@@ -40,3 +40,5 @@ print("Running Time :", round(time.time() - start, 2),"(Sec.)")  # 현재시각 
 #학습된 모델을 파일형태로 저장->load해 재-학습이나 추론에서 사용하게 함.
 print("Save Model, name mnist_basic.h5...")
 model.save("mnist_basic.h5")
+
+print("Job Finished....")
