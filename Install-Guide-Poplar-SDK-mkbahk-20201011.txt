@@ -103,7 +103,7 @@ docker images
 //없으면,
 docker load -i poplar-docker-images-1.0.136.tar.gz
 
-//일반 docker run으로 기동하면 gc-monitor시 ipu가 보이지 않습니다. Ctrl+Pq로 exit()하지 않고 잠시 linux shell로
+//일반 docker run으로 기동하면 gc-monitor시 ipu가 보이지 않습니다. Ctrl+P,Q(대문자)로 exit()하지 않고 잠시 linux shell로
 gc-docker -- -ti --dns="8.8.8.8" graphcore/tensorflow:2-intel-1.3.0-bionic-20200903 /bin/bash
 gc-docker -- --rm -ti --dns="8.8.8.8" graphcore/tensorflow:2-intel-1.3.0-bionic-20200903 /bin/bash
 
