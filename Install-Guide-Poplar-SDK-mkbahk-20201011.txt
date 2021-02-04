@@ -110,7 +110,7 @@ gc-docker -- -ti graphcore/tensorflow:2-intel-1.3.0-bionic-20200903 /bin/bash
 gc-docker -- --rm -ti graphcore/tensorflow:2-intel-1.3.0-bionic-20200903 /bin/bash
 
 //gc-docker 명령은 nvidia-docker 처럼 ipu를 자동적으로 물고 올라가기 위한 docker명령의 wrapper명령입니다.
-docker run --device=/dev/ipu4:/dev/ipu4 --device=/dev/ipu4_ex:/dev/ipu4_ex -ti graphcore/tools gc-inventory
+gc-docker --device-id 0 -- -ti graphcore/tools gc-inventory
 
 docker run --device=/dev/ipu0:/dev/ipu0 --device=/dev/ipu0_ex:/dev/ipu0_ex --device=/dev/ipu0_mailbox:/dev/ipu0_mailbox --device=/dev/ipu0_mem:/dev/ipu0_mem -ti graphcore/tools gc-inventory
 
