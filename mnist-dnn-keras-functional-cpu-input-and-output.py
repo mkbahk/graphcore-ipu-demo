@@ -35,9 +35,9 @@ def create_model():
     inputs = tf.keras.Input(shape = (28, 28))
     
     flatten_layer = keras.layers.Lambda(lambda ipt: K.reshape(ipt, (-1, 28 * 28)))
-    flattened_input = flatten_layer(inputs)
+    flatten_inputs = flatten_layer(inputs)
 
-    x = keras.layers.Flatten()(flattened_input) 
+    x = keras.layers.Flatten()(flatten_inputs) 
     x = keras.layers.Dense(128, activation='relu')(x)
     x = keras.layers.Dense(256, activation='relu')(x)
     x = keras.layers.Dense(128, activation='relu')(x)
@@ -50,32 +50,32 @@ def create_model():
 #end of def
 
 def main():
-      # Get the training dataset.
-      print("==============================Getting Training DataSet==============================\n\n")
-      ds1 = create_train_dataset()
-      print("==============================Getting Test DataSet==============================\n\n")
-      ds2 = create_test_dataset()
+    # Get the training dataset.
+    print("==============================Getting Training DataSet==============================\n\n")
+    ds1 = create_train_dataset()
+    print("==============================Getting Test DataSet==============================\n\n")
+    ds2 = create_test_dataset()
 
-      with strategy.scope():
-          # Create an instance of the model.
-          print("==============================Building Model==============================\n\n")
-          model = create_model()
+    with strategy.scope():
+        # Create an instance of the model.
+        print("==============================Building Model==============================\n\n")
+        model = create_model()
 
-          model.summary()
+        model.summary()
 
-          print("==============================Building Compile==============================\n\n")
-          model.compile(loss = tf.keras.losses.SparseCategoricalCrossentropy(),
-                        optimizer = tf.keras.optimizers.Adam(),
-                        metrics=['sparse_categorical_accuracy'])
+        print("==============================Building Compile==============================\n\n")
+        model.compile(loss = tf.keras.losses.SparseCategoricalCrossentropy(),
+                      optimizer = tf.keras.optimizers.Adam(),
+                      metrics=['sparse_categorical_accuracy'])
 
-          print("==============================Model Training ==============================\n\n")
-          model.fit(ds1, steps_per_epoch=20, epochs=50)
+        print("==============================Model Training ==============================\n\n")
+        model.fit(ds1, steps_per_epoch=20, epochs=50)
 
-          print("\n\n==============================Checking the result==============================\n\n")
-          (loss, accuracy) = model.evaluate(ds2, steps=1000)
-          print("Validation loss: {}".format(loss))
-          print("Validation accuracy: {}%".format(100.0 * accuracy))
-          print("\n\n==============================Job Done==============================")
+        print("\n\n==============================Checking the result==============================\n\n")
+        (loss, accuracy) = model.evaluate(ds2, steps=1000)
+        print("Validation loss: {}".format(loss))
+        print("Validation accuracy: {}%".format(100.0 * accuracy))
+        print("\n\n==============================Job Done==============================")
     #end of with
 #end of def
 
