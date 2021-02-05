@@ -1,2 +1,0 @@
-model_checkpoint_path: "MNIST-Keras-101-Pre_trained_weights"
-all_model_checkpoint_paths: "MNIST-Keras-101-Pre_trained_weights"
