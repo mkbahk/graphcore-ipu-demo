@@ -67,6 +67,7 @@ def main():
 
     with strategy.scope(): 
         model.fit(ds1, steps_per_epoch=30, epochs=50)
+        model.summary()
 
         print("\n\n==============================Checking the result==============================\n\n")
         (loss, accuracy) = model.evaluate(ds2, steps=5)

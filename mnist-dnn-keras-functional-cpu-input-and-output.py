@@ -1,7 +1,7 @@
 import tensorflow as tf
 from tensorflow import keras
-import time
-import os
+import tensorflow.keras.backend as K
+import time, os
 
 start = time.time() # 시작 시간 저장
 strategy = tf.distribute.get_strategy()
@@ -20,7 +20,6 @@ def create_train_dataset():
     print("==============================Processing Training DataSet==============================\n\n")
     train_ds = tf.data.Dataset.from_tensor_slices((x_train, y_train)).shuffle(60000).batch(32, drop_remainder=True)
     train_ds = train_ds.map(lambda d, l: (tf.cast(d, tf.float32), tf.cast(l, tf.float32)))
-    print(train_ds)
     return train_ds.repeat()
 #end of def
 
@@ -31,10 +30,15 @@ def create_test_dataset():
     return test_ds.repeat()
 #end of def
 
-def create_model(ds1):
-    inputs = tf.keras.Input(ds1)
+def create_model():
+    
+    inputs = tf.keras.Input(shape = (28, 28))
+    
+    flatten_layer = keras.layers.Lambda(lambda ipt: K.reshape(ipt, (-1, 28 * 28)))
+    flattened_input = flatten_layer(inputs)
 
-    x = keras.layers.Dense(128, activation='relu')(inputs)
+    x = keras.layers.Flatten()(flattened_input) 
+    x = keras.layers.Dense(128, activation='relu')(x)
     x = keras.layers.Dense(256, activation='relu')(x)
     x = keras.layers.Dense(128, activation='relu')(x)
 
@@ -53,32 +57,36 @@ def main():
       ds2 = create_test_dataset()
 
       with strategy.scope():
-        # Create an instance of the model.
-        print("==============================Building Model==============================\n\n")
-        model = create_model(ds1)
+          # Create an instance of the model.
+          print("==============================Building Model==============================\n\n")
+          model = create_model()
 
-        model.summary()
+          model.summary()
 
-        print("==============================Building Compile==============================\n\n")
-        model.compile(loss = tf.keras.losses.SparseCategoricalCrossentropy(),
-                  optimizer = tf.keras.optimizers.Adam(),
-                  metrics=['sparse_categorical_accuracy'])
+          print("==============================Building Compile==============================\n\n")
+          model.compile(loss = tf.keras.losses.SparseCategoricalCrossentropy(),
+                        optimizer = tf.keras.optimizers.Adam(),
+                        metrics=['sparse_categorical_accuracy'])
 
-        print("==============================Model Training ==============================\n\n")
-        model.fit(ds1, steps_per_epoch=20, epochs=50)
+          print("==============================Model Training ==============================\n\n")
+          model.fit(ds1, steps_per_epoch=20, epochs=50)
 
-        print("\n\n==============================Checking the result==============================\n\n")
-        loss, accuracy = model.evaluate(ds2, steps=1000)
-        print("Validation loss: {}".format(loss))
-        print("Validation accuracy: {}%".format(100.0 * accuracy))
-        print("\n\n==============================Job Done==============================")
-        #end of with
+          print("\n\n==============================Checking the result==============================\n\n")
+          (loss, accuracy) = model.evaluate(ds2, steps=1000)
+          print("Validation loss: {}".format(loss))
+          print("Validation accuracy: {}%".format(100.0 * accuracy))
+          print("\n\n==============================Job Done==============================")
+    #end of with
 #end of def
 
 if __name__ == '__main__':
     main()
 #end of if
 
+print("Total Execution Time :", time.time() - start,"(Sec)")  # 현재시각 - 시작시간 = 실행 시간
 
+#
+# end of Codes...
+#
 
 
