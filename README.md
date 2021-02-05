@@ -7,8 +7,8 @@
 DataSet-NetworkName-language-{sequential, functional, subclassing}.{cpu,cpu-dist,gpu-dist,tpu-dist,ipu-dist}.Technologies.py
 
 ### :hammer_and_wrench: 할 일 들
-- [ ] MNIST Subclassig Version 추가
-- [ ] MNIST CNN(Convolution Neutral Network) 추가
+- [x] MNIST Subclassig Version 추가
+- [x] MNIST CNN(Convolution Neutral Network) 추가
 - [x] EMNIST를 활용한 Deep Learning 전체 프로세스 예제추가
 - [ ] Fashion MNIST CNN 예제추가 
 - [x] @mentions, #refs, [links](), **formatting**, and <del>tags</del> supported
