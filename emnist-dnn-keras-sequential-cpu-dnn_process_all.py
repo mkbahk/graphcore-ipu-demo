@@ -54,6 +54,7 @@ y_test = tf.keras.utils.to_categorical(y_test, num_classes)
 # Create Model Structure(layers)
 #
 kernel_size = (5, 5)
+
 def createmodel():
     return Sequential([
         Convolution2D(16, kernel_size=kernel_size, padding='same', input_shape=input_shape, activation='relu'),
@@ -74,7 +75,7 @@ def createmodel():
         Dropout(0.4),
         Dense(num_classes, activation='softmax'),
     ])
-#end of def:
+###end of def:
 
 # setting up model to run on cpu, or gpu when avaiable
 print("Building Model Structure...")

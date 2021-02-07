@@ -6,7 +6,7 @@ import os
 
 if tf.__version__[0] != '2':
     raise ImportError("TensorFlow 2 is required for this example")
-#end of if
+###end of if
 
 print("Tensorflow version " + tf.__version__)
 print(tf.config.list_physical_devices("CPU"))
@@ -28,14 +28,14 @@ def create_train_dataset():
     train_ds = tf.data.Dataset.from_tensor_slices((x_train, y_train)).shuffle(60000).batch(2000, drop_remainder=True)
     train_ds = train_ds.map(lambda d, l: (tf.cast(d, tf.float32), tf.cast(l, tf.float32)))
     return train_ds.repeat()
-#end of def
+###end of def
 
 def create_test_dataset():
     print("==============================Processing Test  DataSet==============================\n\n")
     test_ds = tf.data.Dataset.from_tensor_slices((x_test, y_test)).shuffle(10000).batch(2000, drop_remainder=True)
     test_ds = test_ds.map(lambda d, l: (tf.cast(d, tf.float32), tf.cast(l, tf.float32)))
     return test_ds.repeat()
-#end of def
+###end of def
 
 # standard tf.keras.Sequential class
 def create_model():
@@ -49,7 +49,7 @@ def create_model():
                   optimizer = tf.keras.optimizers.Adam(),
                   metrics=['sparse_categorical_accuracy'])
     return model
-#end of def
+###end of def
 
 def main():
     # Get the training dataset.
@@ -76,12 +76,13 @@ def main():
 
         print("Validation accuracy: {}%".format(100.0 * accuracy))
         print("\n\n==============================Job Done...==============================")
-    #end of with:
-#end of def
+    ###end of with
+###end of def
 
 if __name__ == '__main__':
     main()
-#end of if
+###end of if
 
 print("Running Time :", round(time.time() - start, 2),"(Sec.)")
 
+###end of codes

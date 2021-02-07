@@ -27,7 +27,7 @@ if not os.path.exists("./MosMedData"):
 
     with zipfile.ZipFile("CT-23.zip", "r") as z_fp:
         z_fp.extractall("./MosMedData/")
-#end of if
+###end of if
 
 import nibabel as nib
 from scipy import ndimage
@@ -39,7 +39,7 @@ def read_nifti_file(filepath):
     # Get raw data
     scan = scan.get_fdata()
     return scan
-#end of def
+###end of def
 
 
 def normalize(volume):
@@ -51,7 +51,7 @@ def normalize(volume):
     volume = (volume - min) / (max - min)
     volume = volume.astype("float32")
     return volume
-#end of def
+###end of def
 
 def resize_volume(img):
     """Resize across z-axis"""
@@ -75,7 +75,7 @@ def resize_volume(img):
     # Resize across z-axis
     img = ndimage.zoom(img, (width_factor, height_factor, depth_factor), order=1)
     return img
-#end of def
+###end of def
 
 def process_scan(path):
     """Read and resize volume"""
@@ -86,13 +86,12 @@ def process_scan(path):
     # Resize width, height and depth
     volume = resize_volume(volume)
     return volume
-#end of def
+###end of def
 
 
 #Folder "CT-0" consist of CT scans having normal lung tissue,
 # no CT-signs of viral pneumonia.
-normal_scan_paths = [os.path.join(os.getcwd(), "MosMedData/CT-0", x) for x in os.listdir("MosMedData/CT-0")
-]
+normal_scan_paths = [os.path.join(os.getcwd(), "MosMedData/CT-0", x) for x in os.listdir("MosMedData/CT-0")]
 # Folder "CT-23" consist of CT scans having several ground-glass opacifications,
 # involvement of lung parenchyma.
 abnormal_scan_paths = [os.path.join(os.getcwd(), "MosMedData/CT-23", x) for x in os.listdir("MosMedData/CT-23")]
@@ -139,11 +138,11 @@ def rotate(volume):
         volume[volume < 0] = 0
         volume[volume > 1] = 1
         return volume
-    #end of def
+    ###end of def
 
     augmented_volume = tf.numpy_function(scipy_rotate, [volume], tf.float32)
     return augmented_volume
-#end of def
+###end of def
 
 
 def train_preprocessing(volume, label):
@@ -152,13 +151,13 @@ def train_preprocessing(volume, label):
     volume = rotate(volume)
     volume = tf.expand_dims(volume, axis=3)
     return volume, label
-#end of def
+###end of def
 
 def validation_preprocessing(volume, label):
     """Process validation data by only adding a channel."""
     volume = tf.expand_dims(volume, axis=3)
     return volume, label
-#end of def
+###end of def
 
 
 # Define data loaders.
@@ -196,12 +195,12 @@ def plot_slices(num_rows, num_columns, width, height, data):
         for j in range(columns_data):
             axarr[i, j].imshow(data[i][j], cmap="gray")
             axarr[i, j].axis("off")
-        #end of for
-    #end of for
+        ###end of for
+    ###end of for
 
     plt.subplots_adjust(wspace=0, hspace=0, left=0, right=1, bottom=0, top=1)
     plt.show()
-#end of def
+###end of def
 
 # Visualize montage of slices.
 # 4 rows and 10 columns for 100 slices of the CT scan.
@@ -237,7 +236,7 @@ def get_model(width=128, height=128, depth=64):
     # Define the model.
     model = keras.Model(inputs, outputs, name="3dcnn")
     return model
-#end of def
+###end of def
 
 # Build model.
 model = get_model(width=128, height=128, depth=64)
@@ -267,7 +266,7 @@ for i, metric in enumerate(["acc", "loss"]):
     ax[i].set_xlabel("epochs")
     ax[i].set_ylabel(metric)
     ax[i].legend(["train", "val"])
-#end of for
+###end of for
 
 # Load best weights.
 model.load_weights("3d_image_classification.h5")
@@ -277,12 +276,12 @@ scores = [1 - prediction[0], prediction[0]]
 class_names = ["normal", "abnormal"]
 for score, name in zip(scores, class_names):
     print("This model is %.2f percent confident that CT scan is %s" % ((100 * score), name))
-#end of for
+###end of for
 
 #수행된 총 시간 출력
 print("Running Time :", round(time.time() - start, 2),"(Sec.)")
 
-# End of Code
+###End of Code
 
 
 

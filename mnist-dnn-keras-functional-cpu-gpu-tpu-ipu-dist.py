@@ -7,7 +7,8 @@ from tensorflow.python import ipu
 # cpu, gpu, tpu, ipu통합 검출 및 수행환경 예
 if tf.__version__[0] != '2':
     raise ImportError("TensorFlow 2 is required for this example")
-    
+###end of if
+
 print("Tensorflow version " + tf.__version__)
 print(tf.config.list_physical_devices("CPU"))
 
@@ -15,17 +16,19 @@ if tf.config.list_physical_devices("GPU") != []:
    print(tf.config.list_physical_devices("GPU"))
 else:
    print("GPU가 없어라...")
+###end of if
 
 if tf.config.list_physical_devices("TPU") != []:
    print(tf.config.list_physical_devices("TPU"))
 else:
    print("TPU가 없은께...알아서 하랑께")
+###end of if
 
 if tf.config.list_physical_devices("IPU") != []:
    print(tf.config.list_physical_devices("IPU"))
 else:
    print("IPU를 없어...빨랑 사야제...그래야 인생이 편히..")
-
+###end of if
 
 # Detect hardware
 try:
@@ -34,6 +37,7 @@ except ValueError:
   tpu_resolver = None
   gpus = tf.config.experimental.list_logical_devices("GPU")
   ipus = tf.config.experimental.list_logical_devices("IPU")
+###end of try
 
 # Select appropriate distribution strategy
 if tpu_resolver:
@@ -58,13 +62,14 @@ elif len(gpus) == 1:
 else:
   strategy = tf.distribute.get_strategy() # default strategy that works on CPU and single GPU
   print('\n\nRunning on CPU\n\n')
-  
+###end of if
+
 print("\n\nNumber of accelerators: ", strategy.num_replicas_in_sync,"\n\n")
 
 # The input data and labels.
 mnist = tf.keras.datasets.mnist
 
-start = time.time() # 시작 시간 저장
+start = time.time() ## 시작 시간 저장
 
 (x_train, y_train), (x_test, y_test) = mnist.load_data()
 (x_train, x_test) = (x_train / 255.0, x_test / 255.0)
@@ -78,14 +83,14 @@ def create_train_dataset():
     train_ds = tf.data.Dataset.from_tensor_slices((x_train, y_train)).shuffle(60000).batch(1, drop_remainder=True)
     train_ds = train_ds.map(lambda d, l: (tf.cast(d, tf.float32), tf.cast(l, tf.float32)))
     return train_ds.repeat()
-#end of def:
+###end of def:
 
 def create_test_dataset():
     print("==============================Processing Test  DataSet==============================\n\n")
     test_ds = tf.data.Dataset.from_tensor_slices((x_test, y_test)).shuffle(10000).batch(1, drop_remainder=True)
     test_ds = test_ds.map(lambda d, l: (tf.cast(d, tf.float32), tf.cast(l, tf.float32)))
     return test_ds.repeat()
-#end of def:
+###end of def:
 
 # Create the model using the IPU-specific Sequential class instead of the
 # standard tf.keras.Sequential class
@@ -102,8 +107,7 @@ def create_model():
                   optimizer = tf.keras.optimizers.Adam(), 
       #           experimental_steps_per_execution = 50, 
                   metrics=['sparse_categorical_accuracy'])
-      return model
-   
+      return model   
    else: 
       model = tf.keras.Sequential([
         keras.layers.Flatten(),
@@ -117,7 +121,8 @@ def create_model():
       #           experimental_steps_per_execution = 50, 
                   metrics=['sparse_categorical_accuracy'])
       return model
-#end of def:
+   ###end of if
+###end of def:
 
 
 def main():
@@ -144,11 +149,13 @@ def main():
       print("Validation accuracy: {}%".format(100.0 * accuracy))
 
       print("\n\n==============================Finished Training by....==============================")
-
-   #end of with:
-#end of def:
+   ###end of with:
+###end of def:
 
 if __name__ == '__main__':
     main()
+###end of if
 
-print("Running Time :", round(time.time() - start, 2),"(Sec.)")  # 현재시각 - 시작시간 = 실행 시간
+print("Running Time :", round(time.time() - start, 2),"(Sec.)")  ## 현재시각 - 시작시간 = 실행 시간
+
+###end of codes

@@ -4,6 +4,8 @@ import tensorflow.keras.backend as K
 import time, os
 
 start = time.time() # 시작 시간 저장
+
+# CPU분산전략 정의
 strategy = tf.distribute.get_strategy()
 
 # The input data and labels.
@@ -21,14 +23,14 @@ def create_train_dataset():
     train_ds = tf.data.Dataset.from_tensor_slices((x_train, y_train)).shuffle(60000).batch(32, drop_remainder=True)
     train_ds = train_ds.map(lambda d, l: (tf.cast(d, tf.float32), tf.cast(l, tf.float32)))
     return train_ds.repeat()
-#end of def
+###end of def:
 
 def create_test_dataset():
     print("==============================Processing Test  DataSet==============================\n\n")
     test_ds = tf.data.Dataset.from_tensor_slices((x_test, y_test)).shuffle(10000).batch(32, drop_remainder=True)
     test_ds = test_ds.map(lambda d, l: (tf.cast(d, tf.float32), tf.cast(l, tf.float32)))
     return test_ds.repeat()
-#end of def
+###end of def:
 
 def create_model():
     
@@ -47,7 +49,7 @@ def create_model():
     # Defined the model.
     model = tf.keras.Model(inputs, outputs, name="dnn")
     return model
-#end of def
+###end of def:
 
 def main():
     # Get the training dataset.
@@ -76,17 +78,17 @@ def main():
         print("Validation loss: {}".format(loss))
         print("Validation accuracy: {}%".format(100.0 * accuracy))
         print("\n\n==============================Job Done==============================")
-    #end of with
-#end of def
+    ###end of with:
+###end of def:
 
 if __name__ == '__main__':
     main()
-#end of if
+###end of if
 
 print("Total Execution Time :", time.time() - start,"(Sec)")  # 현재시각 - 시작시간 = 실행 시간
 
 #
-# end of Codes...
+### end of Codes...
 #
 
 

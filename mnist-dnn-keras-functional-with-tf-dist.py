@@ -17,8 +17,7 @@ x_test = x_test.reshape(10000, 28*28)
 print(y_train.shape, y_test.shape)
 print(x_train.shape, x_test.shape)
 
-strategy = tf.distribute.get_strategy()
-
+strategy = tf.distribute.get_strategy() ##만약 GPU나 cpu가 있으면 코어숫자만큼 분산전략수행
 with strategy.scope():
    #모델생성
    model = keras.Sequential([
@@ -35,4 +34,8 @@ with strategy.scope():
 
    #모델 평가
    model.evaluate(x_test, y_test)
-#End of with:
+###end of with:
+
+#
+###end of codes
+#
