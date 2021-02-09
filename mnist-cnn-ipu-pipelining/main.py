@@ -76,6 +76,7 @@ else:
         print(f"loss: {result[0]:.4f} - accuracy: {result[1]:.4f}")
     ###end of with:
 ###end of if:
+
 print("\n\nTotal Execution Time :", time.time() - start,"(Sec)")  # 현재시각 - 시작시간 = 실행 시간
 
 """end of codes"""
