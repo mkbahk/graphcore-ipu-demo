@@ -33,6 +33,7 @@ from tensorflow.python.keras.optimizer_v2.adam import Adam
 
 if tf.__version__[0] != '2':
     raise ImportError("TensorFlow 2 is required for this example")
+###end of fi:
 
 max_features = 20000
 minibatch_size = 32
@@ -50,7 +51,7 @@ def get_dataset():
     ds = ds.map(lambda x, y: (x, tf.cast(y, tf.int32)))
     ds = ds.batch(minibatch_size, drop_remainder=True)
     return ds
-
+###end of def:
 
 # Define the model.
 def get_model():
@@ -58,15 +59,16 @@ def get_model():
 
     with ipu.keras.PipelineStage(0):
         x = Embedding(max_features, 128)(input_layer)
+    ###end of with:
 
     with ipu.keras.PipelineStage(1):
         x = LSTM(128, dropout=0.2)(x)
         x = Dense(1, activation='sigmoid')(x)
-
+    ###end of with:
     return ipu.keras.PipelineModel(input_layer,
                                    x,
                                    gradient_accumulation_count=gradient_accumulation_count)
-
+###end of def:
 
 def main():
     # Configure IPUs.
@@ -84,7 +86,14 @@ def main():
         # so choose LR appropriately.
         model.compile(loss='binary_crossentropy', optimizer=Adam(0.005))
         model.fit(get_dataset(), steps_per_epoch=768, epochs=2)
-
+        score, acc = model.evaluate(x_test, y_test, batch_size=batch_size)
+        print('Test score:', score)
+        print('Test accuracy:', acc)
+    ###end of with:
+###end of def:
 
 if __name__ == '__main__':
     main()
+###end of if:
+
+"""end of codes"""

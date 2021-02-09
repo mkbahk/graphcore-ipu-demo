@@ -1,4 +1,7 @@
+"""
 # Copyright (c) 2020 Graphcore Ltd. All rights reserved.
+"""
+
 import tensorflow as tf
 
 from tensorflow.python import ipu
@@ -11,7 +14,7 @@ from tensorflow.python.keras.optimizer_v2.adam import Adam
 
 if tf.__version__[0] != '2':
     raise ImportError("TensorFlow 2 is required for this example")
-
+###end of if:
 
 max_features = 20000
 minibatch_size = 32
@@ -28,7 +31,7 @@ def get_dataset():
     ds = ds.map(lambda x, y: (x, tf.cast(y, tf.int32)))
     ds = ds.batch(minibatch_size, drop_remainder=True)
     return ds
-
+###end of def:
 
 # Define the model.
 def get_model():
@@ -36,7 +39,7 @@ def get_model():
         [Embedding(max_features, 128),
          LSTM(128, dropout=0.2),
          Dense(1, activation='sigmoid')])
-
+###end of def:
 
 def main():
     # Configure IPUs.
@@ -52,7 +55,10 @@ def main():
 
         model.compile(loss='binary_crossentropy', optimizer=Adam(0.005))
         model.fit(get_dataset(), steps_per_epoch=768, epochs=3)
-
+    ###end of with:
 
 if __name__ == '__main__':
     main()
+###end of if:
+
+"""end of codes"""

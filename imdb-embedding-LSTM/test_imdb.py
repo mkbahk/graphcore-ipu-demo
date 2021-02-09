@@ -1,4 +1,7 @@
+"""
 # Copyright (c) 2020 Graphcore Ltd. All rights reserved.
+"""
+
 import unittest
 import os
 import pytest
@@ -6,7 +9,6 @@ import tensorflow as tf
 from examples_tests.test_util import SubProcessChecker
 
 working_path = os.path.dirname(__file__)
-
 
 class TensorFlow2Imdb(SubProcessChecker):
     """Integration tests for TensorFlow 2 IMDB example"""
@@ -17,6 +19,7 @@ class TensorFlow2Imdb(SubProcessChecker):
         self.run_command("python imdb.py",
                          working_path,
                          "Epoch 2/")
+    ###end of def:
 
     @pytest.mark.category2
     @pytest.mark.ipus(2)
@@ -25,6 +28,7 @@ class TensorFlow2Imdb(SubProcessChecker):
         self.run_command("python imdb_sequential.py",
                          working_path,
                          "Epoch 2/")
+    ###end of def:
 
     @pytest.mark.category2
     @pytest.mark.ipus(1)
@@ -33,6 +37,7 @@ class TensorFlow2Imdb(SubProcessChecker):
         self.run_command("python imdb_single_ipu.py",
                          working_path,
                          "Epoch 3/")
+    ###end of def:
 
     @pytest.mark.category2
     @pytest.mark.ipus(1)
@@ -41,3 +46,7 @@ class TensorFlow2Imdb(SubProcessChecker):
         self.run_command("python imdb_single_ipu_sequential.py",
                          working_path,
                          "Epoch 3/")
+    ###end of def:
+###end of class:
+
+"""end of codes"""
