@@ -54,6 +54,7 @@ def model_fn():
     x = keras.layers.MaxPooling2D(pool_size=(2, 2))(x)
     x = keras.layers.Flatten()(x)
     x = keras.layers.Dropout(0.5)(x)
+    
     outpus_layer = keras.layers.Dense(num_classes, activation="softmax")(x)
 
     return input_layer, outpus_layer
