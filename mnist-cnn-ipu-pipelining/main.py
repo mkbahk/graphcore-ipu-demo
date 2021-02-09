@@ -63,6 +63,7 @@ else:
             ipu_model = ipu.keras.PipelineModel(
                 *pipeline_model_fn(input_shape, num_classes),
                 gradient_accumulation_count=args.gradient_accumulation_count)
+        ###end of if:
 
         # Compile our model as with the CPU example.
         ipu_model.compile(optimizer="sgd", loss="categorical_crossentropy", metrics=["accuracy"])
