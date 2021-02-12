@@ -35,20 +35,6 @@ def data_fn():
     return x_train, y_train, x_test, y_test
 ### end of def:
 
-def sequential_model_fn():
-    # 단순한 합성곱 네트워크 만들기
-    return keras.Sequential(
-        [
-            layers.Conv2D(32, kernel_size=(3, 3), activation='relu'),
-            layers.MaxPooling2D(pool_size=(2, 2)),
-            layers.Conv2D(64, kernel_size=(3, 3), activation='relu'),
-            layers.MaxPooling2D(pool_size=(2, 2)),
-            layers.Flatten(),
-            layers.Dropout(0.5),
-            layers.Dense(num_classes, activation='softmax')
-        ])
-### end of def:
-
 def functional_model_fn():
     # 단순한 합성곱 네트워크 만들기
     input_layer = keras.Input(shape=input_shape)
@@ -87,12 +73,6 @@ if __name__ == '__main__':
     gpus = tf.config.experimental.list_logical_devices("GPU")
     strategy = tf.distribute.MirroredStrategy([gpu.name for gpu in gpus])
     with strategy.scope():
-        # sequential model 훈련하기
-        print("\n\nTraining a Sequential MNIST Model.")
-        start = time.time()
-        train_model(sequential_model_fn())
-        print("Running Time :", round(time.time() - start, 2),"(Sec.)")
-
         # funcaitonal model 훈련하기
         print("\n\nTraining a Function MNIST Model.")
         start = time.time()
