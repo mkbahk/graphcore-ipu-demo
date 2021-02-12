@@ -10,7 +10,6 @@ from tensorflow.keras import layers
 import tensorflow as tf
 import time
 import os
-from tensorflow.python import ipu
 
 
 # 모델/데이타 하이퍼파라메터
@@ -38,43 +37,31 @@ def data_fn():
 
 def sequential_model_fn():
     # 단순한 합성곱 네트워크 만들기
-    stages = [
-        # Pipeline stage 0.
+    return keras.Sequential(
         [
             layers.Conv2D(32, kernel_size=(3, 3), activation='relu'),
             layers.MaxPooling2D(pool_size=(2, 2)),
             layers.Conv2D(64, kernel_size=(3, 3), activation='relu'),
             layers.MaxPooling2D(pool_size=(2, 2)),
-        ],
-        # Pipeline stage 1.
-        [
             layers.Flatten(),
             layers.Dropout(0.5),
             layers.Dense(num_classes, activation='softmax')
-        ]
-    ]
-    return ipu.keras.SequentialPipelineModel(stages, gradient_accumulation_count=8)
+        ])
 ### end of def:
 
 def functional_model_fn():
     # 단순한 합성곱 네트워크 만들기
-    # 두개의 파이프라인 스테이지로 샤딩합니다.
     input_layer = keras.Input(shape=input_shape)
-
-    with ipu.keras.PipelineStage(0):
-        x = layers.Conv2D(32, kernel_size=(3, 3), activation='relu')(input_layer)
-        x = layers.MaxPooling2D(pool_size=(2, 2))(x)
-        x = layers.Conv2D(64, kernel_size=(3, 3), activation='relu')(x)
-    ### end of with:
-
-    with ipu.keras.PipelineStage(1):
-        x = layers.MaxPooling2D(pool_size=(2, 2))(x)
-        x = layers.Flatten()(x)
-        x = layers.Dropout(0.5)(x)   
-        output_layer = layers.Dense(num_classes, activation='softmax')(x)
-    ### end of with:
-
-    return ipu.keras.PipelineModel(input_layer, output_layer, gradient_accumulation_count=8)
+   
+    x = layers.Conv2D(32, kernel_size=(3, 3), activation='relu')(input_layer)
+    x = layers.MaxPooling2D(pool_size=(2, 2))(x)
+    x = layers.Conv2D(64, kernel_size=(3, 3), activation='relu')(x)
+    x = layers.MaxPooling2D(pool_size=(2, 2))(x)
+    x = layers.Flatten()(x)
+    x = layers.Dropout(0.5)(x)
+    
+    output_layer = layers.Dense(num_classes, activation='softmax')(x)
+    return keras.Model(input_layer, output_layer)
 ### end of def:
 
 def train_model(model):
@@ -97,14 +84,12 @@ def train_model(model):
 ### end of def:
 
 if __name__ == '__main__':
-    # IPU System 설정
-    cfg = ipu.utils.create_ipu_config()
-    cfg = ipu.utils.auto_select_ipus(cfg, 2)
-    #cfg = ipu.utils.select_ipus(config, indices=[8])
-    #cfg = ipu.utils.select_ipus(config, indices=[0, 1, 2, 3])
-    ipu.utils.configure_ipu_system(cfg)
-
-    strategy = ipu.ipu_strategy.IPUStrategy()
+    # TPU System 설정
+    resolver = tf.distribute.cluster_resolver.TPUClusterResolver(tpu='grpc://'+os.environ['COLAB_TPU_ADDR'])
+    tf.config.experimental_connect_to_cluster(resolver)
+    tf.tpu.experimental.initialize_tpu_system(resolver)
+    
+    strategy = tf.distribute.TPUStrategy(resolver)
     with strategy.scope():
         # sequential model 훈련하기
         print("\n\nTraining a Sequential MNIST Model.")

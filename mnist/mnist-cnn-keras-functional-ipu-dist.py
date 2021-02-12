@@ -85,15 +85,15 @@ def train_model(model):
 ### end of def:
 
 if __name__ == '__main__':
+    # IPU System 설정
+    cfg = ipu.utils.create_ipu_config()
+    cfg = ipu.utils.auto_select_ipus(cfg, 2)
+    #cfg = ipu.utils.select_ipus(config, indices=[8])
+    #cfg = ipu.utils.select_ipus(config, indices=[0, 1, 2, 3])
+    ipu.utils.configure_ipu_system(cfg)
+
     strategy = ipu.ipu_strategy.IPUStrategy()
     with strategy.scope():
-        # IPU System 설정
-        cfg = ipu.utils.create_ipu_config()
-        cfg = ipu.utils.auto_select_ipus(cfg, 2)
-        #cfg = ipu.utils.select_ipus(config, indices=[8])
-        #cfg = ipu.utils.select_ipus(config, indices=[0, 1, 2, 3])
-        ipu.utils.configure_ipu_system(cfg)
-
         # sequential model 훈련하기
         print("\n\nTraining a Sequential MNIST Model.")
         start = time.time()
