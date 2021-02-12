@@ -46,7 +46,6 @@ def main():
 
     # Create an IPU distribution strategy.
     strategy = ipu.ipu_strategy.IPUStrategy()
-
     with strategy.scope():
         # Create an instance of the model.
         model = create_model()
@@ -55,8 +54,7 @@ def main():
         ds = create_dataset()
 
         # Train the model.
-        model.compile(loss = tf.keras.losses.SparseCategoricalCrossentropy(),
-                      optimizer = tf.keras.optimizers.SGD(), metrics=['sparse_categorical_accuracy'])
+        model.compile(loss = tf.keras.losses.SparseCategoricalCrossentropy(), optimizer = tf.keras.optimizers.SGD(), metrics=['sparse_categorical_accuracy'])
         model.fit(ds, steps_per_epoch=2000, epochs=100)
     ###end of with:
 ###end of def:
@@ -65,5 +63,6 @@ if __name__ == '__main__':
     main()
 ###end of if:
 
-###end of codes
-
+"""
+end of codes
+"""

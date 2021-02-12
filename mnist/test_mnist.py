@@ -15,6 +15,7 @@ class TensorFlow2Mnist(SubProcessChecker):
 
     @unittest.skipIf(tf.__version__[0] != '2', "Needs TensorFlow 2")
     def test_default_commandline(self):
-        self.run_command("python3 mnist.py",
-                         working_path,
-                         "Epoch 2/")
+        self.run_command("python3 mnist.py", working_path, "Epoch 2/")
+    ### end of def:
+### end of class:
+
