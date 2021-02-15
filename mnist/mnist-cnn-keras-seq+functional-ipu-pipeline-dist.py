@@ -89,7 +89,7 @@ def train_model(model):
     model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
 
     # 모델을 훈련하기
-    _ = model.fit(x=x_train, y=y_train, batch_size=batch_size, epochs=epochs)
+    model.fit(x=x_train, y=y_train, batch_size=batch_size, epochs=epochs)
 
     # 훈련된 모델을 평가하기
     eval_out = model.evaluate(x=x_test, y=y_test, batch_size=batch_size)
