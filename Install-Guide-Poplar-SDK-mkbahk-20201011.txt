@@ -57,6 +57,7 @@ watch -n 1 gc-monitor
 //------------------------------------------
 // python 가상환경을 만들어서 사용하세요.
 //------------------------------------------
+pip install -U pip
 python3 -m venv ./venv_poplar1.3
 source ./venv_poplar1.3/bin/activate
 
