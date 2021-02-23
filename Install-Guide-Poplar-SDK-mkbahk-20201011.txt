@@ -22,20 +22,12 @@ export TMPDIR=/home/$USER/tmp/
 source /home/$USER/poplar_sdk-ubuntu_18_04-1.3.0+272-e24ae395db/poplar-ubuntu_18_04-1.3.36+42067-d79747d7ca/enable.sh
 source /home/$USER/poplar_sdk-ubuntu_18_04-1.3.0+272-e24ae395db/popart-ubuntu_18_04-1.3.35+1943-3fa17782be/enable.sh
 
-// SDK 1.4 버젼 예로 사용자 홈이 /home/$USER/... 에 만들어진 경우
-export TF_POPLAR_FLAGS=--executable_cache_path=/home/$USER/tmp/
-export TMPDIR=/home/$USER/tmp/
-#source /home/$USER/poplar_sdk-ubuntu_18_04-1.4.0+365-665f971c8f/gc_kernel-module-ubuntu_18_04-1.0.47+10706-b9b63c1e81pkg/driver_load.sh
-source /home/$USER/poplar_sdk-ubuntu_18_04-1.4.0+365-665f971c8f/poplar-ubuntu_18_04-1.4.0+71819-c5c0c8ebab/enable.sh
-source /home/$USER/poplar_sdk-ubuntu_18_04-1.4.0+365-665f971c8f/popart-ubuntu_18_04-1.4.0+5352-e86081acc9/enable.sh
-
-
 // SDK 1.4 버젼 예로 사용자 홈이 /localdata/newhome/$USER/... 에 만들어진 경우
-export TF_POPLAR_FLAGS=--executable_cache_path=/home/$USER/tmp/
-export TMPDIR=/home/$USER/tmp/
-#source /localdata/newhome/$USER/poplar_sdk-ubuntu_18_04-1.4.0+365-665f971c8f/gc_kernel-module-ubuntu_18_04-1.0.47+10706-b9b63c1e81pkg/driver_load.sh
-source /localdata/newhome/$USER/poplar_sdk-ubuntu_18_04-1.4.0+365-665f971c8f/poplar-ubuntu_18_04-1.4.0+71819-c5c0c8ebab/enable.sh
-source /localdata/newhome/$USER/poplar_sdk-ubuntu_18_04-1.4.0+365-665f971c8f/popart-ubuntu_18_04-1.4.0+5352-e86081acc9/enable.sh
+export TF_POPLAR_FLAGS=--executable_cache_path=~/tmp/
+export TMPDIR=~/tmp/
+#source ~/poplar_sdk-ubuntu_18_04-1.4.0+365-665f971c8f/gc_kernel-module-ubuntu_18_04-1.0.47+10706-b9b63c1e81pkg/driver_load.sh
+source ~/poplar_sdk-ubuntu_18_04-1.4.0+365-665f971c8f/poplar-ubuntu_18_04-1.4.0+71819-c5c0c8ebab/enable.sh
+source ~/poplar_sdk-ubuntu_18_04-1.4.0+365-665f971c8f/popart-ubuntu_18_04-1.4.0+5352-e86081acc9/enable.sh
 
 
 //driver 정상설치 확인명령, driver는 Superuser 권한을 가진 사람이 한번만 수행해 주면 개별 사용자는 재-수행없이 공유로 사용할 수 있습니다.
