@@ -3,8 +3,8 @@
 //--------------------------------------------------------------------------------//
 
 //필요한 파일들은 /mnt/GC-SDK 디렉토리에 있습니다.
-// /mnt/data에 있는 사용할 sdk버젼을 자신의 로컬 홈에 복사하세요
-tar xvf poplar_sdk-ubuntu_18_04-버젼.tar.gz
+// /mnt/GC-SDK에 있는 사용할 sdk버젼을 자신의 로컬 홈에 복사하세요
+tar -zxvf poplar_sdk-ubuntu_18_04-버젼.tar.gz
 cd poplar_sdk-ubuntu_18_04-버젼
 
 // .profile내에 아래의 문장을 삽입하거나 개별적으로 수행
