@@ -13,8 +13,8 @@ if tf.__version__[0] != '2':
 ###end of if
 
 # Define cpu distribution strategy
-print("Tensorflow version " + tf.__version__) 
-print(tf.config.list_physical_devices("CPU")) a
+print("Tensorflow version " + tf.__version__)
+print(tf.config.list_physical_devices("CPU"))
 strategy = tf.distribute.get_strategy()
 # The input data and labels.
 mnist = tf.keras.datasets.mnist
