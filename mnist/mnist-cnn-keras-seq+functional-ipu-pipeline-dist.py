@@ -64,13 +64,15 @@ def functional_model_fn():
     with ipu.keras.PipelineStage(0):
         x = layers.Conv2D(32, kernel_size=(3, 3), activation='relu')(input_layer)
         x = layers.MaxPooling2D(pool_size=(2, 2))(x)
-        x = layers.Conv2D(64, kernel_size=(3, 3), activation='relu')(x)
-    ### end of with:
-
     with ipu.keras.PipelineStage(1):
+        x = layers.Conv2D(128, kernel_size=(3, 3), activation='relu')(x)
         x = layers.MaxPooling2D(pool_size=(2, 2))(x)
+    with ipu.keras.PipelineStage(2):
+        x = layers.Conv2D(64, kernel_size=(3, 3), activation='relu')(x)
+        x = layers.MaxPooling2D(pool_size=(2, 2))(x)
+    with ipu.keras.PipelineStage(3):
         x = layers.Flatten()(x)
-        x = layers.Dropout(0.5)(x)   
+        x = layers.Dropout(0.5)(x)
         output_layer = layers.Dense(num_classes, activation='softmax')(x)
     ### end of with:
 
@@ -99,7 +101,7 @@ def train_model(model):
 if __name__ == '__main__':
     # IPU System 설정
     cfg = ipu.utils.create_ipu_config()
-    cfg = ipu.utils.auto_select_ipus(cfg, 2)
+    cfg = ipu.utils.auto_select_ipus(cfg, 4)
     #cfg = ipu.utils.select_ipus(config, indices=[8])
     #cfg = ipu.utils.select_ipus(config, indices=[0, 1, 2, 3])
     ipu.utils.configure_ipu_system(cfg)
