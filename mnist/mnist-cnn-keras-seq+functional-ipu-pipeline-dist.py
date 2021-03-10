@@ -109,12 +109,12 @@ if __name__ == '__main__':
     strategy = ipu.ipu_strategy.IPUStrategy()
     with strategy.scope():
         # sequential model 훈련하기
-        print("\n\nTraining a Sequential MNIST Model.")
-        start = time.time()
-        train_model(sequential_model_fn())
-        print("Running Time :", round(time.time() - start, 2),"(Sec.)")
-
-        # funcaitonal model 훈련하기
+        #print("\n\nTraining a Sequential MNIST Model.")
+        #start = time.time()
+        #train_model(sequential_model_fn())
+        #print("Running Time :", round(time.time() - start, 2),"(Sec.)")
+        
+        #funcaitonal model 훈련하기
         print("\n\nTraining a Function MNIST Model.")
         start = time.time()
         train_model(functional_model_fn())
