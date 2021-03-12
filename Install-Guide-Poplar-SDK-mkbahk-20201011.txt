@@ -30,6 +30,9 @@ source ~/poplar_sdk-ubuntu_18_04-1.4.0+365-665f971c8f/poplar-ubuntu_18_04-1.4.0+
 source ~/poplar_sdk-ubuntu_18_04-1.4.0+365-665f971c8f/popart-ubuntu_18_04-1.4.0+5352-e86081acc9/enable.sh
 
 
+//root 사용자가 driver를 설치할 때 dkms관련 에러가 발생하면
+apt install dkms -y
+
 //driver 정상설치 확인명령, driver는 Superuser 권한을 가진 사람이 한번만 수행해 주면 개별 사용자는 재-수행없이 공유로 사용할 수 있습니다.
 modinfo ipu_driver
 
