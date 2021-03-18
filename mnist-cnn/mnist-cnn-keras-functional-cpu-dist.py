@@ -52,7 +52,7 @@ def functional_model_fn():
 
 def train_model(model):
     # 훈련용 하이퍼파라메터
-    batch_size = 128
+    batch_size =  64
     epochs = 100
 
     # 데이타 얻기
