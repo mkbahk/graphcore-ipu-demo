@@ -1,0 +1,147 @@
+kubectl delete -f - <<END
+apiVersion: v1
+kind: Secret
+metadata:
+  name: "storageos-api"
+  namespace: "storageos-operator"
+  labels:
+    app: "storageos"
+type: "kubernetes.io/storageos"
+data:
+  apiUsername: "YWRtaW4="
+  apiPassword: "MTIzNA=="
+END
+
+kubectl delete -f - <<END
+apiVersion: "storageos.com/v1"
+kind: StorageOSCluster
+metadata:
+  name: "example-storageos"
+  namespace: "storageos-operator"
+spec:
+  secretRefName: "storageos-api" # Reference the Secret created in the previous step
+  secretRefNamespace: "storageos-operator"  # Namespace of the Secret
+  k8sDistro: "kubernetes"
+  images:
+    nodeContainer: "storageos/node:1.5.0" # StorageOS version
+  resources:
+    requests:
+    memory: "512Mi"
+END
+
+
+kubectl delete -f - <<END
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  name: default
+  annotations: 
+    storageclass.kubernetes.io/is-default-class: "true"
+provisioner: kubernetes.io/storageos
+parameters:
+  adminSecretName: storageos-api
+  adminSecretNamespace: storageos-operator
+  fsType: ext4
+  pool: default
+END
+
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-hostpath1
+spec:
+  nodeSelector:
+    kubernetes.io/hostname: host202
+  terminationGracePeriodSeconds: 0
+  containers:
+  - name: container
+    image: kubetm/init
+    volumeMounts:
+    - name: hostpath
+      mountPath: /mount1
+  volumes:
+  - name: hostpath
+    persistentVolumeClaim:
+      claimName: pvc-hostpath1
+
+
+kubectl delete -f - <<END
+apiVersion: "storageos.com/v1"
+kind: StorageOSCluster
+metadata:
+  name: "example-storageos"
+  namespace: "storageos-operator"
+spec:
+  secretRefName: "storageos-api" # Reference the Secret created in the previous step
+  secretRefNamespace: "storageos-operator"  # Namespace of the Secret
+  k8sDistro: "kubernetes"
+  images:
+    nodeContainer: "storageos/node:1.5.0" # StorageOS version
+  resources:
+    requests:
+    memory: "512Mi"
+END
+
+kubectl delete -f https://github.com/storageos/cluster-operator/releases/download/1.5.0/storageos-operator.yaml
+
+
+apiextensions.k8s.io/v1beta1
+
+rbac.authorization.k8s.io/v1beta1
+
+
+
+apiVersion: v1
+kind: Secret
+metadata:
+  name: "storageos-api"
+  namespace: "storageos-operator"
+  labels:
+    app: "storageos"
+type: "kubernetes.io/storageos"
+data:
+  # echo -n '<secret>' | base64
+  apiUsername: bWtiYWhr
+  apiPassword: c3RvcmFnZW9z
+  # CSI Credentials
+  csiProvisionUsername: bWtiYWhr
+  csiProvisionPassword: YW5zcmwwMCgpJCU=
+  csiControllerPublishUsername: bWtiYWhr
+  csiControllerPublishPassword: YW5zcmwwMCgpJCU=
+  csiNodePublishUsername: bWtiYWhr
+  csiNodePublishPassword: YW5zcmwwMCgpJCU=
+  csiControllerExpandUsername: bWtiYWhr
+  csiControllerExpandPassword: YW5zcmwwMCgpJCU=
+
+
+kubectl delete -f https://github.com/storageos/cluster-operator/releases/download/v2.3.4/storageos-operator.yaml
+
+
+ipuuser@ipu-pod16-mgmt:~$ vipu-admin list agent --cert ./v
+Error: unknown flag: --cert
+Usage:
+  vipu-admin list agent [flags]
+
+Aliases:
+  agent, agents
+
+Flags:
+  -h, --help   help for agent
+
+Global Flags:
+      --api-access-key string      API access key
+      --api-allocation-id string   Allocation ID to use for partition operations
+  -H, --api-host string            Controller hostname or IP address
+  -P, --api-port int               Controller port number (default 8090)
+      --api-user-id string         API user id
+      --config string              Choose a configuration file explicitly; do not look in the default locations
+  -q, --quiet                      Set quiet flag for the utility
+      --secure                     Connect to the V-IPU Controller in the secure mode
+      --server-version             Show version of the remote server
+      --showjson                   Set showjson flag for the json output
+      --timeout int                Set timeout for the client calls (default 1600)
+      --tls-cert-dir string        Directory for the TLS certificates (default "/home/ipuuser/vipu-certs/client")
+  -v, --version                    Show version
+
+unknown flag: --cert.
