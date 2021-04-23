@@ -1,0 +1,2 @@
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: tensorflow in /usr/local/lib/python3.6/dist-packages (1.14.0)
