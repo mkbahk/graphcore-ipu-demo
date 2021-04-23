@@ -1,0 +1,2350 @@
+=========START===========
+=========START===========
+=========START===========
+=========START===========
+=========START===========
+=========START===========
+=========START===========
+=========START===========
+=========START===========
+=========START===========
+=========START===========
+=========START===========
+=========START===========
+=========START===========
+=========START===========
+=========START===========
+=========START===========
+=========START===========
+=========START===========
+=========START===========
+=========START===========
+=========START===========
+=========START===========
+=========START===========
+=========START===========
+=========START===========
+=========START===========
+=========START===========
+=========START===========
+=========START===========
+=========START===========
+=========START===========
+=========START===========
+=========START===========
+=========START===========
+=========START===========
+=========START===========
+=========START===========
+=========START===========
+=========START===========
+=========START===========
+=========START===========
+=========START===========
+=========START===========
+=========START===========
+=========START===========
+=========START===========
+=========START===========
+=========START===========
+=========START===========
+host201
+host201
+host201
+host201
+host201
+host201
+host201
+host201
+host201
+host201
+host201
+host201
+host201
+host201
+host201
+host201
+host201
+host201
+host201
+host201
+host201
+host201
+host201
+host201
+host201
+host202
+host202
+host202
+host202
+host202
+host202
+host202
+host202
+host202
+host202
+host202
+host202
+host202
+host202
+host202
+host202
+host202
+host202
+host202
+host202
+host202
+host202
+host202
+host202
+host202
+enp24s0f0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.255.255.202  netmask 255.255.255.0  broadcast 10.255.255.255
+        inet6 fe80::a236:9fff:fe88:bc94  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:88:bc:94  txqueuelen 1000  (Ethernet)
+        RX packets 76159  bytes 5356976 (5.3 MB)
+        RX errors 0  dropped 70295  overruns 0  frame 0
+        TX packets 55  bytes 3986 (3.9 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaad00000-aadfffff  
+
+enp24s0f1: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 211.214.88.170  netmask 255.255.255.0  broadcast 211.214.88.255
+        inet6 fe80::a236:9fff:fe88:bc95  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:88:bc:95  txqueuelen 1000  (Ethernet)
+        RX packets 23967101  bytes 2641297165 (2.6 GB)
+        RX errors 0  dropped 450025  overruns 0  frame 0
+        TX packets 751675  bytes 77035421 (77.0 MB)
+enp24s0f0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.255.255.201  netmask 255.255.255.0  broadcast 10.255.255.255
+        inet6 fe80::a236:9fff:fe8b:83bc  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:8b:83:bc  txqueuelen 1000  (Ethernet)
+        RX packets 76162  bytes 5357280 (5.3 MB)
+        RX errors 0  dropped 70293  overruns 0  frame 0
+        TX packets 60  bytes 4364 (4.3 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaad00000-aadfffff  
+
+enp24s0f1: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 211.214.88.169  netmask 255.255.255.0  broadcast 211.214.88.255
+        inet6 fe80::a236:9fff:fe8b:83bd  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:8b:83:bd  txqueuelen 1000  (Ethernet)
+        RX packets 24408406  bytes 2728300314 (2.7 GB)
+        RX errors 0  dropped 450019  overruns 0  frame 0
+        TX packets 1218335  bytes 91981444 (91.9 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaac00000-aacfffff  
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 184  bytes 16416 (16.4 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 184  bytes 16416 (16.4 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaac00000-aacfffff  
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 73736  bytes 9226952 (9.2 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 73736  bytes 9226952 (9.2 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+enp24s0f0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.255.255.202  netmask 255.255.255.0  broadcast 10.255.255.255
+        inet6 fe80::a236:9fff:fe88:bc94  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:88:bc:94  txqueuelen 1000  (Ethernet)
+        RX packets 76159  bytes 5356976 (5.3 MB)
+        RX errors 0  dropped 70295  overruns 0  frame 0
+        TX packets 55  bytes 3986 (3.9 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaad00000-aadfffff  
+
+enp24s0f1: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 211.214.88.170  netmask 255.255.255.0  broadcast 211.214.88.255
+        inet6 fe80::a236:9fff:fe88:bc95  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:88:bc:95  txqueuelen 1000  (Ethernet)
+        RX packets 23967101  bytes 2641297165 (2.6 GB)
+        RX errors 0  dropped 450025  overruns 0  frame 0
+        TX packets 751675  bytes 77035421 (77.0 MB)
+enp24s0f0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.255.255.201  netmask 255.255.255.0  broadcast 10.255.255.255
+        inet6 fe80::a236:9fff:fe8b:83bc  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:8b:83:bc  txqueuelen 1000  (Ethernet)
+        RX packets 76162  bytes 5357280 (5.3 MB)
+        RX errors 0  dropped 70293  overruns 0  frame 0
+        TX packets 60  bytes 4364 (4.3 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaad00000-aadfffff  
+
+enp24s0f1: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 211.214.88.169  netmask 255.255.255.0  broadcast 211.214.88.255
+        inet6 fe80::a236:9fff:fe8b:83bd  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:8b:83:bd  txqueuelen 1000  (Ethernet)
+        RX packets 24408406  bytes 2728300314 (2.7 GB)
+        RX errors 0  dropped 450019  overruns 0  frame 0
+        TX packets 1218335  bytes 91981444 (91.9 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaac00000-aacfffff  
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 184  bytes 16416 (16.4 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 184  bytes 16416 (16.4 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaac00000-aacfffff  
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 73736  bytes 9226952 (9.2 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 73736  bytes 9226952 (9.2 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+enp24s0f0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.255.255.202  netmask 255.255.255.0  broadcast 10.255.255.255
+        inet6 fe80::a236:9fff:fe88:bc94  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:88:bc:94  txqueuelen 1000  (Ethernet)
+        RX packets 76159  bytes 5356976 (5.3 MB)
+        RX errors 0  dropped 70295  overruns 0  frame 0
+        TX packets 55  bytes 3986 (3.9 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaad00000-aadfffff  
+
+enp24s0f1: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 211.214.88.170  netmask 255.255.255.0  broadcast 211.214.88.255
+        inet6 fe80::a236:9fff:fe88:bc95  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:88:bc:95  txqueuelen 1000  (Ethernet)
+        RX packets 23967101  bytes 2641297165 (2.6 GB)
+        RX errors 0  dropped 450025  overruns 0  frame 0
+        TX packets 751675  bytes 77035421 (77.0 MB)
+enp24s0f0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.255.255.201  netmask 255.255.255.0  broadcast 10.255.255.255
+        inet6 fe80::a236:9fff:fe8b:83bc  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:8b:83:bc  txqueuelen 1000  (Ethernet)
+        RX packets 76162  bytes 5357280 (5.3 MB)
+        RX errors 0  dropped 70293  overruns 0  frame 0
+        TX packets 60  bytes 4364 (4.3 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaad00000-aadfffff  
+
+enp24s0f1: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 211.214.88.169  netmask 255.255.255.0  broadcast 211.214.88.255
+        inet6 fe80::a236:9fff:fe8b:83bd  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:8b:83:bd  txqueuelen 1000  (Ethernet)
+        RX packets 24408406  bytes 2728300314 (2.7 GB)
+        RX errors 0  dropped 450019  overruns 0  frame 0
+        TX packets 1218335  bytes 91981444 (91.9 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaac00000-aacfffff  
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 184  bytes 16416 (16.4 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 184  bytes 16416 (16.4 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaac00000-aacfffff  
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 73736  bytes 9226952 (9.2 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 73736  bytes 9226952 (9.2 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+enp24s0f0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.255.255.201  netmask 255.255.255.0  broadcast 10.255.255.255
+        inet6 fe80::a236:9fff:fe8b:83bc  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:8b:83:bc  txqueuelen 1000  (Ethernet)
+        RX packets 76162  bytes 5357280 (5.3 MB)
+        RX errors 0  dropped 70293  overruns 0  frame 0
+        TX packets 60  bytes 4364 (4.3 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaad00000-aadfffff  
+
+enp24s0f1: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 211.214.88.169  netmask 255.255.255.0  broadcast 211.214.88.255
+        inet6 fe80::a236:9fff:fe8b:83bd  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:8b:83:bd  txqueuelen 1000  (Ethernet)
+        RX packets 24408406  bytes 2728300314 (2.7 GB)
+        RX errors 0  dropped 450019  overruns 0  frame 0
+        TX packets 1218335  bytes 91981444 (91.9 MB)
+enp24s0f0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.255.255.202  netmask 255.255.255.0  broadcast 10.255.255.255
+        inet6 fe80::a236:9fff:fe88:bc94  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:88:bc:94  txqueuelen 1000  (Ethernet)
+        RX packets 76159  bytes 5356976 (5.3 MB)
+        RX errors 0  dropped 70295  overruns 0  frame 0
+        TX packets 55  bytes 3986 (3.9 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaad00000-aadfffff  
+
+enp24s0f1: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 211.214.88.170  netmask 255.255.255.0  broadcast 211.214.88.255
+        inet6 fe80::a236:9fff:fe88:bc95  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:88:bc:95  txqueuelen 1000  (Ethernet)
+        RX packets 23967101  bytes 2641297165 (2.6 GB)
+        RX errors 0  dropped 450025  overruns 0  frame 0
+        TX packets 751675  bytes 77035421 (77.0 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaac00000-aacfffff  
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 184  bytes 16416 (16.4 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 184  bytes 16416 (16.4 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaac00000-aacfffff  
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 73736  bytes 9226952 (9.2 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 73736  bytes 9226952 (9.2 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+enp24s0f0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.255.255.201  netmask 255.255.255.0  broadcast 10.255.255.255
+        inet6 fe80::a236:9fff:fe8b:83bc  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:8b:83:bc  txqueuelen 1000  (Ethernet)
+        RX packets 76162  bytes 5357280 (5.3 MB)
+        RX errors 0  dropped 70293  overruns 0  frame 0
+        TX packets 60  bytes 4364 (4.3 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaad00000-aadfffff  
+
+enp24s0f1: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 211.214.88.169  netmask 255.255.255.0  broadcast 211.214.88.255
+        inet6 fe80::a236:9fff:fe8b:83bd  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:8b:83:bd  txqueuelen 1000  (Ethernet)
+        RX packets 24408406  bytes 2728300314 (2.7 GB)
+        RX errors 0  dropped 450019  overruns 0  frame 0
+        TX packets 1218335  bytes 91981444 (91.9 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaac00000-aacfffff  
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 73736  bytes 9226952 (9.2 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 73736  bytes 9226952 (9.2 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+enp24s0f0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.255.255.202  netmask 255.255.255.0  broadcast 10.255.255.255
+        inet6 fe80::a236:9fff:fe88:bc94  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:88:bc:94  txqueuelen 1000  (Ethernet)
+        RX packets 76159  bytes 5356976 (5.3 MB)
+        RX errors 0  dropped 70295  overruns 0  frame 0
+        TX packets 55  bytes 3986 (3.9 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaad00000-aadfffff  
+
+enp24s0f1: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 211.214.88.170  netmask 255.255.255.0  broadcast 211.214.88.255
+        inet6 fe80::a236:9fff:fe88:bc95  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:88:bc:95  txqueuelen 1000  (Ethernet)
+        RX packets 23967101  bytes 2641297165 (2.6 GB)
+        RX errors 0  dropped 450025  overruns 0  frame 0
+        TX packets 751675  bytes 77035421 (77.0 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaac00000-aacfffff  
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 184  bytes 16416 (16.4 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 184  bytes 16416 (16.4 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+enp24s0f0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.255.255.202  netmask 255.255.255.0  broadcast 10.255.255.255
+        inet6 fe80::a236:9fff:fe88:bc94  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:88:bc:94  txqueuelen 1000  (Ethernet)
+        RX packets 76159  bytes 5356976 (5.3 MB)
+        RX errors 0  dropped 70295  overruns 0  frame 0
+        TX packets 55  bytes 3986 (3.9 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaad00000-aadfffff  
+
+enp24s0f1: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 211.214.88.170  netmask 255.255.255.0  broadcast 211.214.88.255
+        inet6 fe80::a236:9fff:fe88:bc95  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:88:bc:95  txqueuelen 1000  (Ethernet)
+        RX packets 23967101  bytes 2641297165 (2.6 GB)
+        RX errors 0  dropped 450025  overruns 0  frame 0
+        TX packets 751675  bytes 77035421 (77.0 MB)
+enp24s0f0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.255.255.201  netmask 255.255.255.0  broadcast 10.255.255.255
+        inet6 fe80::a236:9fff:fe8b:83bc  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:8b:83:bc  txqueuelen 1000  (Ethernet)
+        RX packets 76162  bytes 5357280 (5.3 MB)
+        RX errors 0  dropped 70293  overruns 0  frame 0
+        TX packets 60  bytes 4364 (4.3 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaad00000-aadfffff  
+
+enp24s0f1: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 211.214.88.169  netmask 255.255.255.0  broadcast 211.214.88.255
+        inet6 fe80::a236:9fff:fe8b:83bd  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:8b:83:bd  txqueuelen 1000  (Ethernet)
+        RX packets 24408407  bytes 2728301366 (2.7 GB)
+        RX errors 0  dropped 450019  overruns 0  frame 0
+        TX packets 1218335  bytes 91981444 (91.9 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaac00000-aacfffff  
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 184  bytes 16416 (16.4 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 184  bytes 16416 (16.4 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaac00000-aacfffff  
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 73736  bytes 9226952 (9.2 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 73736  bytes 9226952 (9.2 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+enp24s0f0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.255.255.202  netmask 255.255.255.0  broadcast 10.255.255.255
+        inet6 fe80::a236:9fff:fe88:bc94  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:88:bc:94  txqueuelen 1000  (Ethernet)
+        RX packets 76159  bytes 5356976 (5.3 MB)
+        RX errors 0  dropped 70295  overruns 0  frame 0
+        TX packets 55  bytes 3986 (3.9 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaad00000-aadfffff  
+
+enp24s0f1: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 211.214.88.170  netmask 255.255.255.0  broadcast 211.214.88.255
+        inet6 fe80::a236:9fff:fe88:bc95  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:88:bc:95  txqueuelen 1000  (Ethernet)
+        RX packets 23967101  bytes 2641297165 (2.6 GB)
+        RX errors 0  dropped 450025  overruns 0  frame 0
+        TX packets 751675  bytes 77035421 (77.0 MB)
+enp24s0f0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.255.255.201  netmask 255.255.255.0  broadcast 10.255.255.255
+        inet6 fe80::a236:9fff:fe8b:83bc  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:8b:83:bc  txqueuelen 1000  (Ethernet)
+        RX packets 76162  bytes 5357280 (5.3 MB)
+        RX errors 0  dropped 70293  overruns 0  frame 0
+        TX packets 60  bytes 4364 (4.3 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaad00000-aadfffff  
+
+enp24s0f1: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 211.214.88.169  netmask 255.255.255.0  broadcast 211.214.88.255
+        inet6 fe80::a236:9fff:fe8b:83bd  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:8b:83:bd  txqueuelen 1000  (Ethernet)
+        RX packets 24408406  bytes 2728300314 (2.7 GB)
+        RX errors 0  dropped 450019  overruns 0  frame 0
+        TX packets 1218335  bytes 91981444 (91.9 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaac00000-aacfffff  
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 73736  bytes 9226952 (9.2 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 73736  bytes 9226952 (9.2 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+enp24s0f0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.255.255.201  netmask 255.255.255.0  broadcast 10.255.255.255
+        inet6 fe80::a236:9fff:fe8b:83bc  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:8b:83:bc  txqueuelen 1000  (Ethernet)
+        RX packets 76162  bytes 5357280 (5.3 MB)
+        RX errors 0  dropped 70293  overruns 0  frame 0
+        TX packets 60  bytes 4364 (4.3 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaad00000-aadfffff  
+
+enp24s0f1: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 211.214.88.169  netmask 255.255.255.0  broadcast 211.214.88.255
+        inet6 fe80::a236:9fff:fe8b:83bd  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:8b:83:bd  txqueuelen 1000  (Ethernet)
+        RX packets 24408406  bytes 2728300314 (2.7 GB)
+        RX errors 0  dropped 450019  overruns 0  frame 0
+        TX packets 1218335  bytes 91981444 (91.9 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaac00000-aacfffff  
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 184  bytes 16416 (16.4 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 184  bytes 16416 (16.4 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+enp24s0f0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.255.255.202  netmask 255.255.255.0  broadcast 10.255.255.255
+        inet6 fe80::a236:9fff:fe88:bc94  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:88:bc:94  txqueuelen 1000  (Ethernet)
+        RX packets 76159  bytes 5356976 (5.3 MB)
+        RX errors 0  dropped 70295  overruns 0  frame 0
+        TX packets 55  bytes 3986 (3.9 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaad00000-aadfffff  
+
+enp24s0f1: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 211.214.88.170  netmask 255.255.255.0  broadcast 211.214.88.255
+        inet6 fe80::a236:9fff:fe88:bc95  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:88:bc:95  txqueuelen 1000  (Ethernet)
+        RX packets 23967101  bytes 2641297165 (2.6 GB)
+        RX errors 0  dropped 450025  overruns 0  frame 0
+        TX packets 751675  bytes 77035421 (77.0 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaac00000-aacfffff  
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 184  bytes 16416 (16.4 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 184  bytes 16416 (16.4 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+enp24s0f0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.255.255.202  netmask 255.255.255.0  broadcast 10.255.255.255
+        inet6 fe80::a236:9fff:fe88:bc94  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:88:bc:94  txqueuelen 1000  (Ethernet)
+        RX packets 76159  bytes 5356976 (5.3 MB)
+        RX errors 0  dropped 70295  overruns 0  frame 0
+        TX packets 55  bytes 3986 (3.9 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaad00000-aadfffff  
+
+enp24s0f1: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 211.214.88.170  netmask 255.255.255.0  broadcast 211.214.88.255
+        inet6 fe80::a236:9fff:fe88:bc95  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:88:bc:95  txqueuelen 1000  (Ethernet)
+        RX packets 23967101  bytes 2641297165 (2.6 GB)
+        RX errors 0  dropped 450025  overruns 0  frame 0
+        TX packets 751676  bytes 77036473 (77.0 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaac00000-aacfffff  
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 184  bytes 16416 (16.4 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 184  bytes 16416 (16.4 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+enp24s0f0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.255.255.202  netmask 255.255.255.0  broadcast 10.255.255.255
+        inet6 fe80::a236:9fff:fe88:bc94  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:88:bc:94  txqueuelen 1000  (Ethernet)
+        RX packets 76159  bytes 5356976 (5.3 MB)
+        RX errors 0  dropped 70295  overruns 0  frame 0
+        TX packets 55  bytes 3986 (3.9 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaad00000-aadfffff  
+
+enp24s0f1: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 211.214.88.170  netmask 255.255.255.0  broadcast 211.214.88.255
+        inet6 fe80::a236:9fff:fe88:bc95  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:88:bc:95  txqueuelen 1000  (Ethernet)
+        RX packets 23967105  bytes 2641297429 (2.6 GB)
+        RX errors 0  dropped 450025  overruns 0  frame 0
+        TX packets 751680  bytes 77039753 (77.0 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaac00000-aacfffff  
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 184  bytes 16416 (16.4 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 184  bytes 16416 (16.4 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+enp24s0f0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.255.255.202  netmask 255.255.255.0  broadcast 10.255.255.255
+        inet6 fe80::a236:9fff:fe88:bc94  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:88:bc:94  txqueuelen 1000  (Ethernet)
+        RX packets 76159  bytes 5356976 (5.3 MB)
+        RX errors 0  dropped 70295  overruns 0  frame 0
+        TX packets 55  bytes 3986 (3.9 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaad00000-aadfffff  
+
+enp24s0f1: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 211.214.88.170  netmask 255.255.255.0  broadcast 211.214.88.255
+        inet6 fe80::a236:9fff:fe88:bc95  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:88:bc:95  txqueuelen 1000  (Ethernet)
+        RX packets 23967107  bytes 2641297561 (2.6 GB)
+        RX errors 0  dropped 450025  overruns 0  frame 0
+        TX packets 751682  bytes 77040427 (77.0 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaac00000-aacfffff  
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 184  bytes 16416 (16.4 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 184  bytes 16416 (16.4 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+enp24s0f0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.255.255.202  netmask 255.255.255.0  broadcast 10.255.255.255
+        inet6 fe80::a236:9fff:fe88:bc94  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:88:bc:94  txqueuelen 1000  (Ethernet)
+        RX packets 76159  bytes 5356976 (5.3 MB)
+        RX errors 0  dropped 70295  overruns 0  frame 0
+        TX packets 55  bytes 3986 (3.9 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaad00000-aadfffff  
+
+enp24s0f1: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 211.214.88.170  netmask 255.255.255.0  broadcast 211.214.88.255
+        inet6 fe80::a236:9fff:fe88:bc95  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:88:bc:95  txqueuelen 1000  (Ethernet)
+        RX packets 23967104  bytes 2641297363 (2.6 GB)
+        RX errors 0  dropped 450025  overruns 0  frame 0
+        TX packets 751678  bytes 77038113 (77.0 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaac00000-aacfffff  
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 184  bytes 16416 (16.4 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 184  bytes 16416 (16.4 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+enp24s0f0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.255.255.202  netmask 255.255.255.0  broadcast 10.255.255.255
+        inet6 fe80::a236:9fff:fe88:bc94  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:88:bc:94  txqueuelen 1000  (Ethernet)
+        RX packets 76159  bytes 5356976 (5.3 MB)
+        RX errors 0  dropped 70295  overruns 0  frame 0
+        TX packets 55  bytes 3986 (3.9 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaad00000-aadfffff  
+
+enp24s0f1: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 211.214.88.170  netmask 255.255.255.0  broadcast 211.214.88.255
+        inet6 fe80::a236:9fff:fe88:bc95  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:88:bc:95  txqueuelen 1000  (Ethernet)
+        RX packets 23967106  bytes 2641297495 (2.6 GB)
+        RX errors 0  dropped 450025  overruns 0  frame 0
+        TX packets 751680  bytes 77039753 (77.0 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaac00000-aacfffff  
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 184  bytes 16416 (16.4 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 184  bytes 16416 (16.4 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+enp24s0f0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.255.255.202  netmask 255.255.255.0  broadcast 10.255.255.255
+        inet6 fe80::a236:9fff:fe88:bc94  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:88:bc:94  txqueuelen 1000  (Ethernet)
+        RX packets 76159  bytes 5356976 (5.3 MB)
+        RX errors 0  dropped 70295  overruns 0  frame 0
+        TX packets 55  bytes 3986 (3.9 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaad00000-aadfffff  
+
+enp24s0f1: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 211.214.88.170  netmask 255.255.255.0  broadcast 211.214.88.255
+        inet6 fe80::a236:9fff:fe88:bc95  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:88:bc:95  txqueuelen 1000  (Ethernet)
+        RX packets 23967111  bytes 2641297825 (2.6 GB)
+        RX errors 0  dropped 450025  overruns 0  frame 0
+        TX packets 751686  bytes 77042219 (77.0 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaac00000-aacfffff  
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 184  bytes 16416 (16.4 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 184  bytes 16416 (16.4 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+enp24s0f0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.255.255.202  netmask 255.255.255.0  broadcast 10.255.255.255
+        inet6 fe80::a236:9fff:fe88:bc94  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:88:bc:94  txqueuelen 1000  (Ethernet)
+        RX packets 76159  bytes 5356976 (5.3 MB)
+        RX errors 0  dropped 70295  overruns 0  frame 0
+        TX packets 55  bytes 3986 (3.9 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaad00000-aadfffff  
+
+enp24s0f1: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 211.214.88.170  netmask 255.255.255.0  broadcast 211.214.88.255
+        inet6 fe80::a236:9fff:fe88:bc95  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:88:bc:95  txqueuelen 1000  (Ethernet)
+        RX packets 23967113  bytes 2641297957 (2.6 GB)
+        RX errors 0  dropped 450025  overruns 0  frame 0
+        TX packets 751687  bytes 77042295 (77.0 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaac00000-aacfffff  
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 184  bytes 16416 (16.4 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 184  bytes 16416 (16.4 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+enp24s0f0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.255.255.202  netmask 255.255.255.0  broadcast 10.255.255.255
+        inet6 fe80::a236:9fff:fe88:bc94  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:88:bc:94  txqueuelen 1000  (Ethernet)
+        RX packets 76159  bytes 5356976 (5.3 MB)
+        RX errors 0  dropped 70295  overruns 0  frame 0
+        TX packets 55  bytes 3986 (3.9 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaad00000-aadfffff  
+
+enp24s0f1: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 211.214.88.170  netmask 255.255.255.0  broadcast 211.214.88.255
+        inet6 fe80::a236:9fff:fe88:bc95  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:88:bc:95  txqueuelen 1000  (Ethernet)
+        RX packets 23967108  bytes 2641297627 (2.6 GB)
+        RX errors 0  dropped 450025  overruns 0  frame 0
+        TX packets 751683  bytes 77041479 (77.0 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaac00000-aacfffff  
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 184  bytes 16416 (16.4 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 184  bytes 16416 (16.4 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+enp24s0f0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.255.255.202  netmask 255.255.255.0  broadcast 10.255.255.255
+        inet6 fe80::a236:9fff:fe88:bc94  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:88:bc:94  txqueuelen 1000  (Ethernet)
+        RX packets 76159  bytes 5356976 (5.3 MB)
+        RX errors 0  dropped 70295  overruns 0  frame 0
+        TX packets 55  bytes 3986 (3.9 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaad00000-aadfffff  
+
+enp24s0f1: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 211.214.88.170  netmask 255.255.255.0  broadcast 211.214.88.255
+        inet6 fe80::a236:9fff:fe88:bc95  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:88:bc:95  txqueuelen 1000  (Ethernet)
+        RX packets 23967108  bytes 2641297627 (2.6 GB)
+        RX errors 0  dropped 450025  overruns 0  frame 0
+        TX packets 751682  bytes 77040427 (77.0 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaac00000-aacfffff  
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 184  bytes 16416 (16.4 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 184  bytes 16416 (16.4 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+enp24s0f0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.255.255.202  netmask 255.255.255.0  broadcast 10.255.255.255
+        inet6 fe80::a236:9fff:fe88:bc94  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:88:bc:94  txqueuelen 1000  (Ethernet)
+        RX packets 76159  bytes 5356976 (5.3 MB)
+        RX errors 0  dropped 70295  overruns 0  frame 0
+        TX packets 55  bytes 3986 (3.9 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaad00000-aadfffff  
+
+enp24s0f1: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 211.214.88.170  netmask 255.255.255.0  broadcast 211.214.88.255
+        inet6 fe80::a236:9fff:fe88:bc95  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:88:bc:95  txqueuelen 1000  (Ethernet)
+        RX packets 23967109  bytes 2641297693 (2.6 GB)
+        RX errors 0  dropped 450025  overruns 0  frame 0
+        TX packets 751683  bytes 77041479 (77.0 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaac00000-aacfffff  
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 184  bytes 16416 (16.4 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 184  bytes 16416 (16.4 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+enp24s0f0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.255.255.202  netmask 255.255.255.0  broadcast 10.255.255.255
+        inet6 fe80::a236:9fff:fe88:bc94  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:88:bc:94  txqueuelen 1000  (Ethernet)
+        RX packets 76159  bytes 5356976 (5.3 MB)
+        RX errors 0  dropped 70295  overruns 0  frame 0
+        TX packets 55  bytes 3986 (3.9 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaad00000-aadfffff  
+
+enp24s0f1: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 211.214.88.170  netmask 255.255.255.0  broadcast 211.214.88.255
+        inet6 fe80::a236:9fff:fe88:bc95  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:88:bc:95  txqueuelen 1000  (Ethernet)
+        RX packets 23967112  bytes 2641297891 (2.6 GB)
+        RX errors 0  dropped 450025  overruns 0  frame 0
+        TX packets 751687  bytes 77042295 (77.0 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaac00000-aacfffff  
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 184  bytes 16416 (16.4 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 184  bytes 16416 (16.4 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+enp24s0f0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.255.255.202  netmask 255.255.255.0  broadcast 10.255.255.255
+        inet6 fe80::a236:9fff:fe88:bc94  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:88:bc:94  txqueuelen 1000  (Ethernet)
+        RX packets 76159  bytes 5356976 (5.3 MB)
+        RX errors 0  dropped 70295  overruns 0  frame 0
+        TX packets 55  bytes 3986 (3.9 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaad00000-aadfffff  
+
+enp24s0f1: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 211.214.88.170  netmask 255.255.255.0  broadcast 211.214.88.255
+        inet6 fe80::a236:9fff:fe88:bc95  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:88:bc:95  txqueuelen 1000  (Ethernet)
+        RX packets 23967115  bytes 2641298089 (2.6 GB)
+        RX errors 0  dropped 450025  overruns 0  frame 0
+        TX packets 751689  bytes 77042447 (77.0 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaac00000-aacfffff  
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 184  bytes 16416 (16.4 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 184  bytes 16416 (16.4 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+enp24s0f0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.255.255.202  netmask 255.255.255.0  broadcast 10.255.255.255
+        inet6 fe80::a236:9fff:fe88:bc94  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:88:bc:94  txqueuelen 1000  (Ethernet)
+        RX packets 76159  bytes 5356976 (5.3 MB)
+        RX errors 0  dropped 70295  overruns 0  frame 0
+        TX packets 55  bytes 3986 (3.9 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaad00000-aadfffff  
+
+enp24s0f1: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 211.214.88.170  netmask 255.255.255.0  broadcast 211.214.88.255
+        inet6 fe80::a236:9fff:fe88:bc95  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:88:bc:95  txqueuelen 1000  (Ethernet)
+        RX packets 23967114  bytes 2641298023 (2.6 GB)
+        RX errors 0  dropped 450025  overruns 0  frame 0
+        TX packets 751688  bytes 77042371 (77.0 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaac00000-aacfffff  
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 184  bytes 16416 (16.4 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 184  bytes 16416 (16.4 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+enp24s0f0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.255.255.202  netmask 255.255.255.0  broadcast 10.255.255.255
+        inet6 fe80::a236:9fff:fe88:bc94  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:88:bc:94  txqueuelen 1000  (Ethernet)
+        RX packets 76159  bytes 5356976 (5.3 MB)
+        RX errors 0  dropped 70295  overruns 0  frame 0
+        TX packets 55  bytes 3986 (3.9 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaad00000-aadfffff  
+
+enp24s0f1: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 211.214.88.170  netmask 255.255.255.0  broadcast 211.214.88.255
+        inet6 fe80::a236:9fff:fe88:bc95  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:88:bc:95  txqueuelen 1000  (Ethernet)
+        RX packets 23967113  bytes 2641297957 (2.6 GB)
+        RX errors 0  dropped 450025  overruns 0  frame 0
+        TX packets 751687  bytes 77042295 (77.0 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaac00000-aacfffff  
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 184  bytes 16416 (16.4 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 184  bytes 16416 (16.4 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+enp24s0f0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.255.255.202  netmask 255.255.255.0  broadcast 10.255.255.255
+        inet6 fe80::a236:9fff:fe88:bc94  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:88:bc:94  txqueuelen 1000  (Ethernet)
+        RX packets 76159  bytes 5356976 (5.3 MB)
+        RX errors 0  dropped 70295  overruns 0  frame 0
+        TX packets 55  bytes 3986 (3.9 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaad00000-aadfffff  
+
+enp24s0f1: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 211.214.88.170  netmask 255.255.255.0  broadcast 211.214.88.255
+        inet6 fe80::a236:9fff:fe88:bc95  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:88:bc:95  txqueuelen 1000  (Ethernet)
+        RX packets 23967113  bytes 2641297957 (2.6 GB)
+        RX errors 0  dropped 450025  overruns 0  frame 0
+        TX packets 751688  bytes 77042371 (77.0 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaac00000-aacfffff  
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 184  bytes 16416 (16.4 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 184  bytes 16416 (16.4 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+enp24s0f0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.255.255.202  netmask 255.255.255.0  broadcast 10.255.255.255
+        inet6 fe80::a236:9fff:fe88:bc94  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:88:bc:94  txqueuelen 1000  (Ethernet)
+        RX packets 76159  bytes 5356976 (5.3 MB)
+        RX errors 0  dropped 70295  overruns 0  frame 0
+        TX packets 55  bytes 3986 (3.9 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaad00000-aadfffff  
+
+enp24s0f1: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 211.214.88.170  netmask 255.255.255.0  broadcast 211.214.88.255
+        inet6 fe80::a236:9fff:fe88:bc95  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:88:bc:95  txqueuelen 1000  (Ethernet)
+        RX packets 23967115  bytes 2641298089 (2.6 GB)
+        RX errors 0  dropped 450025  overruns 0  frame 0
+        TX packets 751690  bytes 77042523 (77.0 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaac00000-aacfffff  
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 184  bytes 16416 (16.4 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 184  bytes 16416 (16.4 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+enp24s0f0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.255.255.202  netmask 255.255.255.0  broadcast 10.255.255.255
+        inet6 fe80::a236:9fff:fe88:bc94  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:88:bc:94  txqueuelen 1000  (Ethernet)
+        RX packets 76159  bytes 5356976 (5.3 MB)
+        RX errors 0  dropped 70295  overruns 0  frame 0
+        TX packets 55  bytes 3986 (3.9 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaad00000-aadfffff  
+
+enp24s0f1: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 211.214.88.170  netmask 255.255.255.0  broadcast 211.214.88.255
+        inet6 fe80::a236:9fff:fe88:bc95  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:88:bc:95  txqueuelen 1000  (Ethernet)
+        RX packets 23967115  bytes 2641298089 (2.6 GB)
+        RX errors 0  dropped 450025  overruns 0  frame 0
+        TX packets 751690  bytes 77042523 (77.0 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaac00000-aacfffff  
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 184  bytes 16416 (16.4 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 184  bytes 16416 (16.4 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaac00000-aacfffff  
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 73736  bytes 9226952 (9.2 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 73736  bytes 9226952 (9.2 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+enp24s0f0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.255.255.201  netmask 255.255.255.0  broadcast 10.255.255.255
+        inet6 fe80::a236:9fff:fe8b:83bc  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:8b:83:bc  txqueuelen 1000  (Ethernet)
+        RX packets 76162  bytes 5357280 (5.3 MB)
+        RX errors 0  dropped 70293  overruns 0  frame 0
+        TX packets 60  bytes 4364 (4.3 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaad00000-aadfffff  
+
+enp24s0f1: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 211.214.88.169  netmask 255.255.255.0  broadcast 211.214.88.255
+        inet6 fe80::a236:9fff:fe8b:83bd  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:8b:83:bd  txqueuelen 1000  (Ethernet)
+        RX packets 24408408  bytes 2728301954 (2.7 GB)
+        RX errors 0  dropped 450019  overruns 0  frame 0
+        TX packets 1218336  bytes 91981510 (91.9 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaac00000-aacfffff  
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 73739  bytes 9228623 (9.2 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 73739  bytes 9228623 (9.2 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+enp24s0f0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.255.255.201  netmask 255.255.255.0  broadcast 10.255.255.255
+        inet6 fe80::a236:9fff:fe8b:83bc  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:8b:83:bc  txqueuelen 1000  (Ethernet)
+        RX packets 76162  bytes 5357280 (5.3 MB)
+        RX errors 0  dropped 70293  overruns 0  frame 0
+        TX packets 60  bytes 4364 (4.3 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaad00000-aadfffff  
+
+enp24s0f1: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 211.214.88.169  netmask 255.255.255.0  broadcast 211.214.88.255
+        inet6 fe80::a236:9fff:fe8b:83bd  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:8b:83:bd  txqueuelen 1000  (Ethernet)
+        RX packets 24408407  bytes 2728301366 (2.7 GB)
+        RX errors 0  dropped 450019  overruns 0  frame 0
+        TX packets 1218336  bytes 91981510 (91.9 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaac00000-aacfffff  
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 73738  bytes 9228043 (9.2 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 73738  bytes 9228043 (9.2 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+enp24s0f0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.255.255.201  netmask 255.255.255.0  broadcast 10.255.255.255
+        inet6 fe80::a236:9fff:fe8b:83bc  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:8b:83:bc  txqueuelen 1000  (Ethernet)
+        RX packets 76162  bytes 5357280 (5.3 MB)
+        RX errors 0  dropped 70293  overruns 0  frame 0
+        TX packets 60  bytes 4364 (4.3 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaad00000-aadfffff  
+
+enp24s0f1: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 211.214.88.169  netmask 255.255.255.0  broadcast 211.214.88.255
+        inet6 fe80::a236:9fff:fe8b:83bd  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:8b:83:bd  txqueuelen 1000  (Ethernet)
+        RX packets 24408408  bytes 2728301954 (2.7 GB)
+        RX errors 0  dropped 450019  overruns 0  frame 0
+        TX packets 1218337  bytes 91981576 (91.9 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaac00000-aacfffff  
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 73741  bytes 9229714 (9.2 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 73741  bytes 9229714 (9.2 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+enp24s0f0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.255.255.201  netmask 255.255.255.0  broadcast 10.255.255.255
+        inet6 fe80::a236:9fff:fe8b:83bc  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:8b:83:bc  txqueuelen 1000  (Ethernet)
+        RX packets 76162  bytes 5357280 (5.3 MB)
+        RX errors 0  dropped 70293  overruns 0  frame 0
+        TX packets 60  bytes 4364 (4.3 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaad00000-aadfffff  
+
+enp24s0f1: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 211.214.88.169  netmask 255.255.255.0  broadcast 211.214.88.255
+        inet6 fe80::a236:9fff:fe8b:83bd  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:8b:83:bd  txqueuelen 1000  (Ethernet)
+        RX packets 24408411  bytes 2728304646 (2.7 GB)
+        RX errors 0  dropped 450019  overruns 0  frame 0
+        TX packets 1218340  bytes 91981774 (91.9 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaac00000-aacfffff  
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 73744  bytes 9230398 (9.2 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 73744  bytes 9230398 (9.2 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+enp24s0f0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.255.255.201  netmask 255.255.255.0  broadcast 10.255.255.255
+        inet6 fe80::a236:9fff:fe8b:83bc  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:8b:83:bc  txqueuelen 1000  (Ethernet)
+        RX packets 76162  bytes 5357280 (5.3 MB)
+        RX errors 0  dropped 70293  overruns 0  frame 0
+        TX packets 60  bytes 4364 (4.3 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaad00000-aadfffff  
+
+enp24s0f1: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 211.214.88.169  netmask 255.255.255.0  broadcast 211.214.88.255
+        inet6 fe80::a236:9fff:fe8b:83bd  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:8b:83:bd  txqueuelen 1000  (Ethernet)
+        RX packets 24408409  bytes 2728303006 (2.7 GB)
+        RX errors 0  dropped 450019  overruns 0  frame 0
+        TX packets 1218338  bytes 91981642 (91.9 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaac00000-aacfffff  
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 73744  bytes 9230398 (9.2 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 73744  bytes 9230398 (9.2 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+enp24s0f0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.255.255.201  netmask 255.255.255.0  broadcast 10.255.255.255
+        inet6 fe80::a236:9fff:fe8b:83bc  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:8b:83:bc  txqueuelen 1000  (Ethernet)
+        RX packets 76162  bytes 5357280 (5.3 MB)
+        RX errors 0  dropped 70293  overruns 0  frame 0
+        TX packets 60  bytes 4364 (4.3 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaad00000-aadfffff  
+
+enp24s0f1: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 211.214.88.169  netmask 255.255.255.0  broadcast 211.214.88.255
+        inet6 fe80::a236:9fff:fe8b:83bd  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:8b:83:bd  txqueuelen 1000  (Ethernet)
+        RX packets 24408413  bytes 2728305320 (2.7 GB)
+        RX errors 0  dropped 450019  overruns 0  frame 0
+        TX packets 1218342  bytes 91981906 (91.9 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaac00000-aacfffff  
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 73746  bytes 9231489 (9.2 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 73746  bytes 9231489 (9.2 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+enp24s0f0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.255.255.201  netmask 255.255.255.0  broadcast 10.255.255.255
+        inet6 fe80::a236:9fff:fe8b:83bc  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:8b:83:bc  txqueuelen 1000  (Ethernet)
+        RX packets 76162  bytes 5357280 (5.3 MB)
+        RX errors 0  dropped 70293  overruns 0  frame 0
+        TX packets 60  bytes 4364 (4.3 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaad00000-aadfffff  
+
+enp24s0f1: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 211.214.88.169  netmask 255.255.255.0  broadcast 211.214.88.255
+        inet6 fe80::a236:9fff:fe8b:83bd  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:8b:83:bd  txqueuelen 1000  (Ethernet)
+        RX packets 24408413  bytes 2728305320 (2.7 GB)
+        RX errors 0  dropped 450019  overruns 0  frame 0
+        TX packets 1218342  bytes 91981906 (91.9 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaac00000-aacfffff  
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 73748  bytes 9232121 (9.2 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 73748  bytes 9232121 (9.2 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+enp24s0f0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.255.255.201  netmask 255.255.255.0  broadcast 10.255.255.255
+        inet6 fe80::a236:9fff:fe8b:83bc  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:8b:83:bc  txqueuelen 1000  (Ethernet)
+        RX packets 76162  bytes 5357280 (5.3 MB)
+        RX errors 0  dropped 70293  overruns 0  frame 0
+        TX packets 60  bytes 4364 (4.3 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaad00000-aadfffff  
+
+enp24s0f1: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 211.214.88.169  netmask 255.255.255.0  broadcast 211.214.88.255
+        inet6 fe80::a236:9fff:fe8b:83bd  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:8b:83:bd  txqueuelen 1000  (Ethernet)
+        RX packets 24408410  bytes 2728303594 (2.7 GB)
+        RX errors 0  dropped 450019  overruns 0  frame 0
+        TX packets 1218339  bytes 91981708 (91.9 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaac00000-aacfffff  
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 73744  bytes 9230398 (9.2 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 73744  bytes 9230398 (9.2 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+enp24s0f0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.255.255.201  netmask 255.255.255.0  broadcast 10.255.255.255
+        inet6 fe80::a236:9fff:fe8b:83bc  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:8b:83:bc  txqueuelen 1000  (Ethernet)
+        RX packets 76162  bytes 5357280 (5.3 MB)
+        RX errors 0  dropped 70293  overruns 0  frame 0
+        TX packets 60  bytes 4364 (4.3 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaad00000-aadfffff  
+
+enp24s0f1: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 211.214.88.169  netmask 255.255.255.0  broadcast 211.214.88.255
+        inet6 fe80::a236:9fff:fe8b:83bd  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:8b:83:bd  txqueuelen 1000  (Ethernet)
+        RX packets 24408413  bytes 2728305320 (2.7 GB)
+        RX errors 0  dropped 450019  overruns 0  frame 0
+        TX packets 1218342  bytes 91981906 (91.9 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaac00000-aacfffff  
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 73748  bytes 9232121 (9.2 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 73748  bytes 9232121 (9.2 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+enp24s0f0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.255.255.201  netmask 255.255.255.0  broadcast 10.255.255.255
+        inet6 fe80::a236:9fff:fe8b:83bc  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:8b:83:bc  txqueuelen 1000  (Ethernet)
+        RX packets 76162  bytes 5357280 (5.3 MB)
+        RX errors 0  dropped 70293  overruns 0  frame 0
+        TX packets 60  bytes 4364 (4.3 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaad00000-aadfffff  
+
+enp24s0f1: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 211.214.88.169  netmask 255.255.255.0  broadcast 211.214.88.255
+        inet6 fe80::a236:9fff:fe8b:83bd  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:8b:83:bd  txqueuelen 1000  (Ethernet)
+        RX packets 24408412  bytes 2728305234 (2.7 GB)
+        RX errors 0  dropped 450019  overruns 0  frame 0
+        TX packets 1218341  bytes 91981840 (91.9 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaac00000-aacfffff  
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 73744  bytes 9230398 (9.2 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 73744  bytes 9230398 (9.2 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+enp24s0f0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.255.255.201  netmask 255.255.255.0  broadcast 10.255.255.255
+        inet6 fe80::a236:9fff:fe8b:83bc  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:8b:83:bc  txqueuelen 1000  (Ethernet)
+        RX packets 76162  bytes 5357280 (5.3 MB)
+        RX errors 0  dropped 70293  overruns 0  frame 0
+        TX packets 60  bytes 4364 (4.3 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaad00000-aadfffff  
+
+enp24s0f1: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 211.214.88.169  netmask 255.255.255.0  broadcast 211.214.88.255
+        inet6 fe80::a236:9fff:fe8b:83bd  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:8b:83:bd  txqueuelen 1000  (Ethernet)
+        RX packets 24408414  bytes 2728306372 (2.7 GB)
+        RX errors 0  dropped 450019  overruns 0  frame 0
+        TX packets 1218343  bytes 91981972 (91.9 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaac00000-aacfffff  
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 73748  bytes 9232121 (9.2 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 73748  bytes 9232121 (9.2 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+enp24s0f0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.255.255.201  netmask 255.255.255.0  broadcast 10.255.255.255
+        inet6 fe80::a236:9fff:fe8b:83bc  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:8b:83:bc  txqueuelen 1000  (Ethernet)
+        RX packets 76162  bytes 5357280 (5.3 MB)
+        RX errors 0  dropped 70293  overruns 0  frame 0
+        TX packets 60  bytes 4364 (4.3 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaad00000-aadfffff  
+
+enp24s0f1: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 211.214.88.169  netmask 255.255.255.0  broadcast 211.214.88.255
+        inet6 fe80::a236:9fff:fe8b:83bd  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:8b:83:bd  txqueuelen 1000  (Ethernet)
+        RX packets 24408415  bytes 2728306960 (2.7 GB)
+        RX errors 0  dropped 450019  overruns 0  frame 0
+        TX packets 1218344  bytes 91982038 (91.9 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaac00000-aacfffff  
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 73748  bytes 9232121 (9.2 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 73748  bytes 9232121 (9.2 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+enp24s0f0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.255.255.201  netmask 255.255.255.0  broadcast 10.255.255.255
+        inet6 fe80::a236:9fff:fe8b:83bc  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:8b:83:bc  txqueuelen 1000  (Ethernet)
+        RX packets 76162  bytes 5357280 (5.3 MB)
+        RX errors 0  dropped 70293  overruns 0  frame 0
+        TX packets 60  bytes 4364 (4.3 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaad00000-aadfffff  
+
+enp24s0f1: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 211.214.88.169  netmask 255.255.255.0  broadcast 211.214.88.255
+        inet6 fe80::a236:9fff:fe8b:83bd  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:8b:83:bd  txqueuelen 1000  (Ethernet)
+        RX packets 24408418  bytes 2728307188 (2.7 GB)
+        RX errors 0  dropped 450019  overruns 0  frame 0
+        TX packets 1218346  bytes 91982170 (91.9 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaac00000-aacfffff  
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 73752  bytes 9233844 (9.2 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 73752  bytes 9233844 (9.2 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+enp24s0f0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.255.255.201  netmask 255.255.255.0  broadcast 10.255.255.255
+        inet6 fe80::a236:9fff:fe8b:83bc  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:8b:83:bc  txqueuelen 1000  (Ethernet)
+        RX packets 76162  bytes 5357280 (5.3 MB)
+        RX errors 0  dropped 70293  overruns 0  frame 0
+        TX packets 60  bytes 4364 (4.3 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaad00000-aadfffff  
+
+enp24s0f1: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 211.214.88.169  netmask 255.255.255.0  broadcast 211.214.88.255
+        inet6 fe80::a236:9fff:fe8b:83bd  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:8b:83:bd  txqueuelen 1000  (Ethernet)
+        RX packets 24408417  bytes 2728307112 (2.7 GB)
+        RX errors 0  dropped 450019  overruns 0  frame 0
+        TX packets 1218346  bytes 91982170 (91.9 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaac00000-aacfffff  
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 73750  bytes 9233212 (9.2 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 73750  bytes 9233212 (9.2 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+enp24s0f0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.255.255.201  netmask 255.255.255.0  broadcast 10.255.255.255
+        inet6 fe80::a236:9fff:fe8b:83bc  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:8b:83:bc  txqueuelen 1000  (Ethernet)
+        RX packets 76162  bytes 5357280 (5.3 MB)
+        RX errors 0  dropped 70293  overruns 0  frame 0
+        TX packets 60  bytes 4364 (4.3 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaad00000-aadfffff  
+
+enp24s0f1: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 211.214.88.169  netmask 255.255.255.0  broadcast 211.214.88.255
+        inet6 fe80::a236:9fff:fe8b:83bd  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:8b:83:bd  txqueuelen 1000  (Ethernet)
+        RX packets 24408418  bytes 2728307188 (2.7 GB)
+        RX errors 0  dropped 450019  overruns 0  frame 0
+        TX packets 1218347  bytes 91982236 (91.9 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaac00000-aacfffff  
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 73752  bytes 9233844 (9.2 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 73752  bytes 9233844 (9.2 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+enp24s0f0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.255.255.201  netmask 255.255.255.0  broadcast 10.255.255.255
+        inet6 fe80::a236:9fff:fe8b:83bc  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:8b:83:bc  txqueuelen 1000  (Ethernet)
+        RX packets 76162  bytes 5357280 (5.3 MB)
+        RX errors 0  dropped 70293  overruns 0  frame 0
+        TX packets 60  bytes 4364 (4.3 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaad00000-aadfffff  
+
+enp24s0f1: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 211.214.88.169  netmask 255.255.255.0  broadcast 211.214.88.255
+        inet6 fe80::a236:9fff:fe8b:83bd  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:8b:83:bd  txqueuelen 1000  (Ethernet)
+        RX packets 24408424  bytes 2728310108 (2.7 GB)
+        RX errors 0  dropped 450019  overruns 0  frame 0
+        TX packets 1218352  bytes 91982566 (91.9 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaac00000-aacfffff  
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 73758  bytes 9236658 (9.2 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 73758  bytes 9236658 (9.2 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+enp24s0f0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.255.255.201  netmask 255.255.255.0  broadcast 10.255.255.255
+        inet6 fe80::a236:9fff:fe8b:83bc  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:8b:83:bc  txqueuelen 1000  (Ethernet)
+        RX packets 76162  bytes 5357280 (5.3 MB)
+        RX errors 0  dropped 70293  overruns 0  frame 0
+        TX packets 60  bytes 4364 (4.3 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaad00000-aadfffff  
+
+enp24s0f1: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 211.214.88.169  netmask 255.255.255.0  broadcast 211.214.88.255
+        inet6 fe80::a236:9fff:fe8b:83bd  prefixlen 64  scopeid 0x20<link>
+        ether a0:36:9f:8b:83:bd  txqueuelen 1000  (Ethernet)
+        RX packets 24408424  bytes 2728310108 (2.7 GB)
+        RX errors 0  dropped 450019  overruns 0  frame 0
+        TX packets 1218352  bytes 91982566 (91.9 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0xaac00000-aacfffff  
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 73758  bytes 9236658 (9.2 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 73758  bytes 9236658 (9.2 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=116 time=37.3 ms
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=116 time=37.5 ms
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=116 time=37.3 ms
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=116 time=37.3 ms
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=116 time=37.5 ms
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=116 time=37.2 ms
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=116 time=37.4 ms
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=116 time=37.5 ms
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=116 time=37.3 ms
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=116 time=37.2 ms
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=116 time=37.3 ms
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=116 time=37.3 ms
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=116 time=37.2 ms
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=116 time=37.2 ms
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=116 time=37.2 ms
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=116 time=37.2 ms
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=116 time=37.2 ms
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=116 time=37.2 ms
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=116 time=37.2 ms
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=116 time=37.2 ms
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=116 time=37.2 ms
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=116 time=37.1 ms
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=116 time=37.2 ms
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=116 time=37.2 ms
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=116 time=37.2 ms
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=116 time=37.2 ms
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=116 time=37.2 ms
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=116 time=37.1 ms
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=116 time=37.1 ms
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=116 time=37.1 ms
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=116 time=37.2 ms
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=116 time=37.1 ms
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=116 time=37.1 ms
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=116 time=37.2 ms
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=116 time=37.2 ms
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=116 time=37.2 ms
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=116 time=37.1 ms
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=116 time=37.1 ms
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=116 time=37.2 ms
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=116 time=37.1 ms
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=116 time=37.2 ms
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=116 time=37.2 ms
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=116 time=37.1 ms
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=116 time=37.1 ms
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=116 time=37.1 ms
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=116 time=37.1 ms
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=116 time=37.1 ms
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=116 time=37.2 ms
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=116 time=37.2 ms
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=116 time=37.1 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=116 time=37.1 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=116 time=37.1 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=116 time=37.1 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=116 time=37.1 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=116 time=37.1 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=116 time=37.1 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=116 time=37.1 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=116 time=37.1 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=116 time=37.1 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=116 time=37.1 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=116 time=37.1 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=116 time=37.3 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=116 time=37.1 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=116 time=37.1 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=116 time=37.4 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=116 time=37.1 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=116 time=37.3 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=116 time=37.3 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=116 time=37.3 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=116 time=37.3 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=116 time=37.1 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=116 time=37.1 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=116 time=37.1 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=116 time=37.3 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=116 time=37.1 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=116 time=37.3 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=116 time=37.3 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=116 time=37.3 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=116 time=37.3 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=116 time=37.3 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=116 time=37.3 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=116 time=37.3 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=116 time=37.3 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=116 time=37.4 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=116 time=37.3 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=116 time=37.3 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=116 time=37.3 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=116 time=37.4 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=116 time=37.4 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=116 time=37.3 ms
+64 bytes from 8.8.8.8: icmp_seq=4 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=4 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=4 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=4 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=4 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=4 ttl=116 time=37.3 ms
+64 bytes from 8.8.8.8: icmp_seq=4 ttl=116 time=37.3 ms
+64 bytes from 8.8.8.8: icmp_seq=4 ttl=116 time=37.3 ms
+64 bytes from 8.8.8.8: icmp_seq=4 ttl=116 time=37.3 ms
+64 bytes from 8.8.8.8: icmp_seq=4 ttl=116 time=37.3 ms
+64 bytes from 8.8.8.8: icmp_seq=4 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=4 ttl=116 time=37.4 ms
+64 bytes from 8.8.8.8: icmp_seq=4 ttl=116 time=37.3 ms
+64 bytes from 8.8.8.8: icmp_seq=4 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=4 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=4 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=4 ttl=116 time=37.4 ms
+64 bytes from 8.8.8.8: icmp_seq=4 ttl=116 time=37.4 ms
+64 bytes from 8.8.8.8: icmp_seq=4 ttl=116 time=37.3 ms
+64 bytes from 8.8.8.8: icmp_seq=4 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=4 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=4 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=4 ttl=116 time=37.3 ms
+64 bytes from 8.8.8.8: icmp_seq=4 ttl=116 time=37.3 ms
+64 bytes from 8.8.8.8: icmp_seq=4 ttl=116 time=37.3 ms
+64 bytes from 8.8.8.8: icmp_seq=4 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=4 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=4 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=4 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=4 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=4 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=4 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=4 ttl=116 time=37.1 ms
+64 bytes from 8.8.8.8: icmp_seq=4 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=4 ttl=116 time=37.1 ms
+64 bytes from 8.8.8.8: icmp_seq=4 ttl=116 time=37.1 ms
+64 bytes from 8.8.8.8: icmp_seq=4 ttl=116 time=37.1 ms
+64 bytes from 8.8.8.8: icmp_seq=4 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=4 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=4 ttl=116 time=37.1 ms
+64 bytes from 8.8.8.8: icmp_seq=4 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=4 ttl=116 time=37.1 ms
+64 bytes from 8.8.8.8: icmp_seq=4 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=4 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=4 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=4 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=4 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=4 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=4 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=4 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=5 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=5 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=5 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=5 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=5 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=5 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=5 ttl=116 time=37.1 ms
+64 bytes from 8.8.8.8: icmp_seq=5 ttl=116 time=37.3 ms
+64 bytes from 8.8.8.8: icmp_seq=5 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=5 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=5 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=5 ttl=116 time=37.3 ms
+64 bytes from 8.8.8.8: icmp_seq=5 ttl=116 time=37.3 ms
+64 bytes from 8.8.8.8: icmp_seq=5 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=5 ttl=116 time=37.3 ms
+64 bytes from 8.8.8.8: icmp_seq=5 ttl=116 time=37.3 ms
+64 bytes from 8.8.8.8: icmp_seq=5 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=5 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=5 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=5 ttl=116 time=37.3 ms
+64 bytes from 8.8.8.8: icmp_seq=5 ttl=116 time=37.3 ms
+64 bytes from 8.8.8.8: icmp_seq=5 ttl=116 time=37.3 ms
+64 bytes from 8.8.8.8: icmp_seq=5 ttl=116 time=37.1 ms
+64 bytes from 8.8.8.8: icmp_seq=5 ttl=116 time=37.1 ms
+64 bytes from 8.8.8.8: icmp_seq=5 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=5 ttl=116 time=37.3 ms
+64 bytes from 8.8.8.8: icmp_seq=5 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=5 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=5 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=5 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=5 ttl=116 time=37.1 ms
+64 bytes from 8.8.8.8: icmp_seq=5 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=5 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=5 ttl=116 time=37.3 ms
+64 bytes from 8.8.8.8: icmp_seq=5 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=5 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=5 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=5 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=5 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=5 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=5 ttl=116 time=37.3 ms
+64 bytes from 8.8.8.8: icmp_seq=5 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=5 ttl=116 time=37.3 ms
+64 bytes from 8.8.8.8: icmp_seq=5 ttl=116 time=37.3 ms
+64 bytes from 8.8.8.8: icmp_seq=5 ttl=116 time=37.3 ms
+64 bytes from 8.8.8.8: icmp_seq=5 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=5 ttl=116 time=37.3 ms
+64 bytes from 8.8.8.8: icmp_seq=5 ttl=116 time=37.3 ms
+64 bytes from 8.8.8.8: icmp_seq=5 ttl=116 time=37.3 ms
+64 bytes from 8.8.8.8: icmp_seq=5 ttl=116 time=37.3 ms
+64 bytes from 8.8.8.8: icmp_seq=6 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=6 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=6 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=6 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=6 ttl=116 time=37.3 ms
+64 bytes from 8.8.8.8: icmp_seq=6 ttl=116 time=37.3 ms
+64 bytes from 8.8.8.8: icmp_seq=6 ttl=116 time=37.3 ms
+64 bytes from 8.8.8.8: icmp_seq=6 ttl=116 time=37.3 ms
+64 bytes from 8.8.8.8: icmp_seq=6 ttl=116 time=37.3 ms
+64 bytes from 8.8.8.8: icmp_seq=6 ttl=116 time=37.1 ms
+64 bytes from 8.8.8.8: icmp_seq=6 ttl=116 time=37.3 ms
+64 bytes from 8.8.8.8: icmp_seq=6 ttl=116 time=37.3 ms
+64 bytes from 8.8.8.8: icmp_seq=6 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=6 ttl=116 time=37.3 ms
+64 bytes from 8.8.8.8: icmp_seq=6 ttl=116 time=37.4 ms
+64 bytes from 8.8.8.8: icmp_seq=6 ttl=116 time=37.3 ms
+64 bytes from 8.8.8.8: icmp_seq=6 ttl=116 time=37.3 ms
+64 bytes from 8.8.8.8: icmp_seq=6 ttl=116 time=37.4 ms
+64 bytes from 8.8.8.8: icmp_seq=6 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=6 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=6 ttl=116 time=37.1 ms
+64 bytes from 8.8.8.8: icmp_seq=6 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=6 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=6 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=6 ttl=116 time=37.1 ms
+64 bytes from 8.8.8.8: icmp_seq=6 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=6 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=6 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=6 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=6 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=6 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=6 ttl=116 time=37.3 ms
+64 bytes from 8.8.8.8: icmp_seq=6 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=6 ttl=116 time=37.1 ms
+64 bytes from 8.8.8.8: icmp_seq=6 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=6 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=6 ttl=116 time=37.4 ms
+64 bytes from 8.8.8.8: icmp_seq=6 ttl=116 time=37.4 ms
+64 bytes from 8.8.8.8: icmp_seq=6 ttl=116 time=37.3 ms
+64 bytes from 8.8.8.8: icmp_seq=6 ttl=116 time=37.4 ms
+64 bytes from 8.8.8.8: icmp_seq=6 ttl=116 time=37.3 ms
+64 bytes from 8.8.8.8: icmp_seq=6 ttl=116 time=37.4 ms
+64 bytes from 8.8.8.8: icmp_seq=6 ttl=116 time=37.4 ms
+64 bytes from 8.8.8.8: icmp_seq=6 ttl=116 time=37.4 ms
+64 bytes from 8.8.8.8: icmp_seq=6 ttl=116 time=37.3 ms
+64 bytes from 8.8.8.8: icmp_seq=6 ttl=116 time=37.3 ms
+64 bytes from 8.8.8.8: icmp_seq=6 ttl=116 time=37.3 ms
+64 bytes from 8.8.8.8: icmp_seq=6 ttl=116 time=37.4 ms
+64 bytes from 8.8.8.8: icmp_seq=6 ttl=116 time=37.3 ms
+64 bytes from 8.8.8.8: icmp_seq=6 ttl=116 time=37.4 ms
+64 bytes from 8.8.8.8: icmp_seq=7 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=7 ttl=116 time=37.1 ms
+64 bytes from 8.8.8.8: icmp_seq=7 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=7 ttl=116 time=37.1 ms
+64 bytes from 8.8.8.8: icmp_seq=7 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=7 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=7 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=7 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=7 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=7 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=7 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=7 ttl=116 time=37.3 ms
+64 bytes from 8.8.8.8: icmp_seq=7 ttl=116 time=37.4 ms
+64 bytes from 8.8.8.8: icmp_seq=7 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=7 ttl=116 time=37.3 ms
+64 bytes from 8.8.8.8: icmp_seq=7 ttl=116 time=37.3 ms
+64 bytes from 8.8.8.8: icmp_seq=7 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=7 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=7 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=7 ttl=116 time=37.4 ms
+64 bytes from 8.8.8.8: icmp_seq=7 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=7 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=7 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=7 ttl=116 time=37.1 ms
+64 bytes from 8.8.8.8: icmp_seq=7 ttl=116 time=37.1 ms
+64 bytes from 8.8.8.8: icmp_seq=7 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=7 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=7 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=7 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=7 ttl=116 time=37.1 ms
+64 bytes from 8.8.8.8: icmp_seq=7 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=7 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=7 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=7 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=7 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=7 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=7 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=7 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=7 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=7 ttl=116 time=37.3 ms
+64 bytes from 8.8.8.8: icmp_seq=7 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=7 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=7 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=7 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=7 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=7 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=7 ttl=116 time=37.3 ms
+64 bytes from 8.8.8.8: icmp_seq=7 ttl=116 time=37.3 ms
+64 bytes from 8.8.8.8: icmp_seq=7 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=7 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=8 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=8 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=8 ttl=116 time=37.1 ms
+64 bytes from 8.8.8.8: icmp_seq=8 ttl=116 time=37.3 ms
+64 bytes from 8.8.8.8: icmp_seq=8 ttl=116 time=37.3 ms
+64 bytes from 8.8.8.8: icmp_seq=8 ttl=116 time=37.1 ms
+64 bytes from 8.8.8.8: icmp_seq=8 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=8 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=8 ttl=116 time=37.3 ms
+64 bytes from 8.8.8.8: icmp_seq=8 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=8 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=8 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=8 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=8 ttl=116 time=37.3 ms
+64 bytes from 8.8.8.8: icmp_seq=8 ttl=116 time=37.3 ms
+64 bytes from 8.8.8.8: icmp_seq=8 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=8 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=8 ttl=116 time=37.3 ms
+64 bytes from 8.8.8.8: icmp_seq=8 ttl=116 time=37.3 ms
+64 bytes from 8.8.8.8: icmp_seq=8 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=8 ttl=116 time=37.3 ms
+64 bytes from 8.8.8.8: icmp_seq=8 ttl=116 time=37.3 ms
+64 bytes from 8.8.8.8: icmp_seq=8 ttl=116 time=37.1 ms
+64 bytes from 8.8.8.8: icmp_seq=8 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=8 ttl=116 time=37.1 ms
+64 bytes from 8.8.8.8: icmp_seq=8 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=8 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=8 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=8 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=8 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=8 ttl=116 time=37.3 ms
+64 bytes from 8.8.8.8: icmp_seq=8 ttl=116 time=37.3 ms
+64 bytes from 8.8.8.8: icmp_seq=8 ttl=116 time=37.3 ms
+64 bytes from 8.8.8.8: icmp_seq=8 ttl=116 time=37.3 ms
+64 bytes from 8.8.8.8: icmp_seq=8 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=8 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=8 ttl=116 time=37.3 ms
+64 bytes from 8.8.8.8: icmp_seq=8 ttl=116 time=37.4 ms
+64 bytes from 8.8.8.8: icmp_seq=8 ttl=116 time=37.4 ms
+64 bytes from 8.8.8.8: icmp_seq=8 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=8 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=8 ttl=116 time=37.4 ms
+64 bytes from 8.8.8.8: icmp_seq=8 ttl=116 time=37.3 ms
+64 bytes from 8.8.8.8: icmp_seq=8 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=8 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=8 ttl=116 time=37.4 ms
+64 bytes from 8.8.8.8: icmp_seq=8 ttl=116 time=37.4 ms
+64 bytes from 8.8.8.8: icmp_seq=8 ttl=116 time=37.3 ms
+64 bytes from 8.8.8.8: icmp_seq=8 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=8 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=9 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=9 ttl=116 time=37.1 ms
+64 bytes from 8.8.8.8: icmp_seq=9 ttl=116 time=37.1 ms
+64 bytes from 8.8.8.8: icmp_seq=9 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=9 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=9 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=9 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=9 ttl=116 time=37.1 ms
+64 bytes from 8.8.8.8: icmp_seq=9 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=9 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=9 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=9 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=9 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=9 ttl=116 time=37.3 ms
+64 bytes from 8.8.8.8: icmp_seq=9 ttl=116 time=37.3 ms
+64 bytes from 8.8.8.8: icmp_seq=9 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=9 ttl=116 time=37.3 ms
+64 bytes from 8.8.8.8: icmp_seq=9 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=9 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=9 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=9 ttl=116 time=37.3 ms
+64 bytes from 8.8.8.8: icmp_seq=9 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=9 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=9 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=9 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=9 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=9 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=9 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=9 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=9 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=9 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=9 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=9 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=9 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=9 ttl=116 time=37.3 ms
+64 bytes from 8.8.8.8: icmp_seq=9 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=9 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=9 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=9 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=9 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=9 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=9 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=9 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=9 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=9 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=9 ttl=116 time=37.3 ms
+64 bytes from 8.8.8.8: icmp_seq=9 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=9 ttl=116 time=37.3 ms
+64 bytes from 8.8.8.8: icmp_seq=9 ttl=116 time=37.2 ms
+64 bytes from 8.8.8.8: icmp_seq=9 ttl=116 time=37.3 ms
+64 bytes from 8.8.8.8: icmp_seq=10 ttl=116 time=37.2 ms
+
+--- 8.8.8.8 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9012ms
+rtt min/avg/max/mdev = 37.147/37.230/37.299/0.176 ms
+64 bytes from 8.8.8.8: icmp_seq=10 ttl=116 time=37.2 ms
+
+--- 8.8.8.8 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9011ms
+rtt min/avg/max/mdev = 37.172/37.240/37.337/0.220 ms
+64 bytes from 8.8.8.8: icmp_seq=10 ttl=116 time=37.1 ms
+
+--- 8.8.8.8 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9011ms
+rtt min/avg/max/mdev = 37.175/37.224/37.305/0.197 ms
+64 bytes from 8.8.8.8: icmp_seq=10 ttl=116 time=37.3 ms
+
+64 bytes from 8.8.8.8: icmp_seq=10 ttl=116 time=37.2 ms
+
+--- 8.8.8.8 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9012ms
+rtt min/avg/max/mdev = 37.170/37.278/37.423/0.187 ms
+--- 8.8.8.8 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9012ms
+rtt min/avg/max/mdev = 37.152/37.288/37.435/0.117 ms
+64 bytes from 8.8.8.8: icmp_seq=10 ttl=116 time=37.2 ms
+
+--- 8.8.8.8 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9012ms
+rtt min/avg/max/mdev = 37.216/37.278/37.506/0.271 ms
+64 bytes from 8.8.8.8: icmp_seq=10 ttl=116 time=37.2 ms
+
+--- 8.8.8.8 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9012ms
+rtt min/avg/max/mdev = 37.177/37.270/37.429/0.065 ms
+64 bytes from 8.8.8.8: icmp_seq=10 ttl=116 time=37.2 ms
+
+--- 8.8.8.8 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9012ms
+rtt min/avg/max/mdev = 37.152/37.264/37.362/0.201 ms
+64 bytes from 8.8.8.8: icmp_seq=10 ttl=116 time=37.2 ms
+
+--- 8.8.8.8 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9011ms
+rtt min/avg/max/mdev = 37.158/37.282/37.409/0.116 ms
+64 bytes from 8.8.8.8: icmp_seq=10 ttl=116 time=37.3 ms
+
+--- 8.8.8.8 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9012ms
+rtt min/avg/max/mdev = 37.205/37.283/37.398/0.264 ms
+64 bytes from 8.8.8.8: icmp_seq=10 ttl=116 time=37.3 ms
+
+--- 8.8.8.8 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9012ms
+rtt min/avg/max/mdev = 37.174/37.295/37.382/0.184 ms
+64 bytes from 8.8.8.8: icmp_seq=10 ttl=116 time=37.4 ms
+
+--- 8.8.8.8 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9011ms
+rtt min/avg/max/mdev = 37.200/37.292/37.487/0.077 ms
+64 bytes from 8.8.8.8: icmp_seq=10 ttl=116 time=37.2 ms
+
+--- 8.8.8.8 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9011ms
+rtt min/avg/max/mdev = 37.184/37.275/37.404/0.136 ms
+64 bytes from 8.8.8.8: icmp_seq=10 ttl=116 time=37.4 ms
+
+--- 8.8.8.8 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9012ms
+rtt min/avg/max/mdev = 37.205/37.305/37.505/0.245 ms
+64 bytes from 8.8.8.8: icmp_seq=10 ttl=116 time=37.4 ms
+
+--- 8.8.8.8 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9012ms
+rtt min/avg/max/mdev = 37.163/37.256/37.443/0.256 ms
+64 bytes from 8.8.8.8: icmp_seq=10 ttl=116 time=37.3 ms
+
+--- 8.8.8.8 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9012ms
+rtt min/avg/max/mdev = 37.209/37.297/37.389/0.251 ms
+64 bytes from 8.8.8.8: icmp_seq=10 ttl=116 time=37.3 ms
+
+--- 8.8.8.8 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9012ms
+rtt min/avg/max/mdev = 37.191/37.280/37.385/0.107 ms
+64 bytes from 8.8.8.8: icmp_seq=10 ttl=116 time=37.3 ms
+
+--- 8.8.8.8 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9012ms
+rtt min/avg/max/mdev = 37.134/37.240/37.357/0.110 ms
+64 bytes from 8.8.8.8: icmp_seq=10 ttl=116 time=37.3 ms
+
+--- 8.8.8.8 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9012ms
+rtt min/avg/max/mdev = 37.159/37.268/37.421/0.268 ms
+64 bytes from 8.8.8.8: icmp_seq=10 ttl=116 time=37.3 ms
+
+--- 8.8.8.8 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9011ms
+rtt min/avg/max/mdev = 37.174/37.265/37.424/0.110 ms
+64 bytes from 8.8.8.8: icmp_seq=10 ttl=116 time=37.5 ms
+
+--- 8.8.8.8 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9012ms
+rtt min/avg/max/mdev = 37.186/37.331/37.565/0.248 ms
+64 bytes from 8.8.8.8: icmp_seq=10 ttl=116 time=37.4 ms
+
+--- 8.8.8.8 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9012ms
+rtt min/avg/max/mdev = 37.250/37.347/37.496/0.256 ms
+64 bytes from 8.8.8.8: icmp_seq=10 ttl=116 time=37.5 ms
+
+--- 8.8.8.8 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9012ms
+rtt min/avg/max/mdev = 37.198/37.340/37.530/0.159 ms
+64 bytes from 8.8.8.8: icmp_seq=10 ttl=116 time=37.3 ms
+
+--- 8.8.8.8 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9012ms
+rtt min/avg/max/mdev = 37.186/37.290/37.357/0.180 ms
+64 bytes from 8.8.8.8: icmp_seq=10 ttl=116 time=37.5 ms
+
+--- 8.8.8.8 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9012ms
+rtt min/avg/max/mdev = 37.145/37.262/37.502/0.197 ms
+64 bytes from 8.8.8.8: icmp_seq=10 ttl=116 time=37.2 ms
+
+--- 8.8.8.8 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9012ms
+rtt min/avg/max/mdev = 37.209/37.261/37.419/0.236 ms
+64 bytes from 8.8.8.8: icmp_seq=10 ttl=116 time=37.1 ms
+
+--- 8.8.8.8 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9011ms
+rtt min/avg/max/mdev = 37.165/37.263/37.422/0.146 ms
+64 bytes from 8.8.8.8: icmp_seq=10 ttl=116 time=37.1 ms
+
+--- 8.8.8.8 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9011ms
+rtt min/avg/max/mdev = 37.177/37.281/37.422/0.188 ms
+64 bytes from 8.8.8.8: icmp_seq=10 ttl=116 time=37.1 ms
+
+64 bytes from 8.8.8.8: icmp_seq=10 ttl=116 time=37.1 ms
+
+64 bytes from 8.8.8.8: icmp_seq=10 ttl=116 time=37.2 ms
+
+--- 8.8.8.8 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9011ms
+rtt min/avg/max/mdev = 37.201/37.228/37.285/0.245 ms
+64 bytes from 8.8.8.8: icmp_seq=10 ttl=116 time=37.1 ms
+
+--- 8.8.8.8 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9012ms
+rtt min/avg/max/mdev = 37.163/37.221/37.285/0.213 ms
+--- 8.8.8.8 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9012ms
+rtt min/avg/max/mdev = 37.167/37.252/37.418/0.109 ms
+64 bytes from 8.8.8.8: icmp_seq=10 ttl=116 time=37.2 ms
+
+--- 8.8.8.8 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9012ms
+rtt min/avg/max/mdev = 37.173/37.233/37.316/0.129 ms
+64 bytes from 8.8.8.8: icmp_seq=10 ttl=116 time=37.2 ms
+
+--- 8.8.8.8 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9011ms
+rtt min/avg/max/mdev = 37.158/37.214/37.318/0.097 ms
+64 bytes from 8.8.8.8: icmp_seq=10 ttl=116 time=37.1 ms
+
+--- 8.8.8.8 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9012ms
+rtt min/avg/max/mdev = 37.145/37.283/37.431/0.279 ms
+--- 8.8.8.8 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9010ms
+rtt min/avg/max/mdev = 37.155/37.272/37.426/0.242 ms
+64 bytes from 8.8.8.8: icmp_seq=10 ttl=116 time=37.1 ms
+
+--- 8.8.8.8 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9012ms
+rtt min/avg/max/mdev = 37.184/37.231/37.336/0.232 ms
+64 bytes from 8.8.8.8: icmp_seq=10 ttl=116 time=37.2 ms
+
+--- 8.8.8.8 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9012ms
+rtt min/avg/max/mdev = 37.179/37.255/37.422/0.136 ms
+64 bytes from 8.8.8.8: icmp_seq=10 ttl=116 time=37.3 ms
+
+--- 8.8.8.8 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9012ms
+rtt min/avg/max/mdev = 37.164/37.269/37.371/0.237 ms
+64 bytes from 8.8.8.8: icmp_seq=10 ttl=116 time=37.3 ms
+
+--- 8.8.8.8 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9012ms
+rtt min/avg/max/mdev = 37.208/37.288/37.401/0.250 ms
+64 bytes from 8.8.8.8: icmp_seq=10 ttl=116 time=37.3 ms
+
+--- 8.8.8.8 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9012ms
+rtt min/avg/max/mdev = 37.170/37.269/37.383/0.144 ms
+64 bytes from 8.8.8.8: icmp_seq=10 ttl=116 time=37.2 ms
+
+--- 8.8.8.8 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9012ms
+rtt min/avg/max/mdev = 37.187/37.263/37.346/0.198 ms
+64 bytes from 8.8.8.8: icmp_seq=10 ttl=116 time=37.3 ms
+
+--- 8.8.8.8 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9012ms
+rtt min/avg/max/mdev = 37.161/37.303/37.457/0.213 ms
+64 bytes from 8.8.8.8: icmp_seq=10 ttl=116 time=37.2 ms
+
+--- 8.8.8.8 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9012ms
+rtt min/avg/max/mdev = 37.174/37.244/37.308/0.178 ms
+64 bytes from 8.8.8.8: icmp_seq=10 ttl=116 time=37.3 ms
+
+--- 8.8.8.8 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9013ms
+rtt min/avg/max/mdev = 37.178/37.267/37.417/0.203 ms
+64 bytes from 8.8.8.8: icmp_seq=10 ttl=116 time=37.3 ms
+
+--- 8.8.8.8 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9012ms
+rtt min/avg/max/mdev = 37.188/37.299/37.399/0.222 ms
+64 bytes from 8.8.8.8: icmp_seq=10 ttl=116 time=37.3 ms
+
+--- 8.8.8.8 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9012ms
+rtt min/avg/max/mdev = 37.175/37.273/37.353/0.179 ms
+64 bytes from 8.8.8.8: icmp_seq=10 ttl=116 time=37.2 ms
+
+--- 8.8.8.8 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9013ms
+rtt min/avg/max/mdev = 37.150/37.309/37.431/0.191 ms
+64 bytes from 8.8.8.8: icmp_seq=10 ttl=116 time=37.2 ms
+
+--- 8.8.8.8 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9011ms
+rtt min/avg/max/mdev = 37.207/37.288/37.452/0.223 ms
+64 bytes from 8.8.8.8: icmp_seq=10 ttl=116 time=37.3 ms
+
+--- 8.8.8.8 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9012ms
+rtt min/avg/max/mdev = 37.169/37.273/37.465/0.242 ms
+64 bytes from 8.8.8.8: icmp_seq=10 ttl=116 time=37.2 ms
+
+--- 8.8.8.8 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9012ms
+rtt min/avg/max/mdev = 37.194/37.279/37.369/0.201 ms
+=========END===========
+=========END===========
+=========END===========
+=========END===========
+=========END===========
+=========END===========
+=========END===========
+=========END===========
+=========END===========
+=========END===========
+=========END===========
+=========END===========
+=========END===========
+=========END===========
+=========END===========
+=========END===========
+=========END===========
+=========END===========
+=========END===========
+=========END===========
+=========END===========
+=========END===========
+=========END===========
+=========END===========
+=========END===========
+=========END===========
+=========END===========
+=========END===========
+=========END===========
+=========END===========
+=========END===========
+=========END===========
+=========END===========
+=========END===========
+=========END===========
+=========END===========
+=========END===========
+=========END===========
+=========END===========
+=========END===========
+=========END===========
+=========END===========
+=========END===========
+=========END===========
+=========END===========
+=========END===========
+=========END===========
+=========END===========
+=========END===========
+=========END===========
