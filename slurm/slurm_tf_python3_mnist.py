@@ -38,7 +38,7 @@ print (train_labels.shape)
 
 model.compile(loss="categorical_crossentropy", optimizer="sgd", metrics=["accuracy"])
 
-model.fit(train_images, train_labels, batch_size=100, epochs=5, verbose=1)
+model.fit(train_images, train_labels, batch_size=100, epochs=50, verbose=1)
 
 test_loss, test_acc = model.evaluate(test_images, test_labels)
 print("Test accuracy:", test_acc)
