@@ -73,7 +73,7 @@ def train_model(model):
 if __name__ == '__main__':
     # IPU System 설정
     cfg = ipu.utils.create_ipu_config()
-    cfg = ipu.utils.auto_select_ipus(cfg, 8)
+    cfg = ipu.utils.auto_select_ipus(cfg, 2)
     ipu.utils.configure_ipu_system(cfg)
 
     strategy = ipu.ipu_strategy.IPUStrategy()
