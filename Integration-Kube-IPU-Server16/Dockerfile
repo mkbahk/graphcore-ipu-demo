@@ -1,3 +1,3 @@
-FROM mkbahk/gc-p20tf21-mnist-cpu:latest
-ENTRYPOINT ["python3", "mnist-cnn-keras-functional-cpu-dist.py"]
+FROM mkbahk/gc-ipu-p21-tf21-mnist:latest
+ENTRYPOINT ["python3", "/root/graphcore-ipu-demo/mnist-cnn/mnist-cnn-keras-functional-ipu-dist.py"]
 
